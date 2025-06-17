@@ -6,7 +6,8 @@ import HomePage from './pages/HomePage';
 import ServicesPage from './pages/ServicesPage';
 import ContactPage from './pages/ContactPage'; // Now this file exists
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage'; // Now this file exists
-import LocalExpPage from './pages/LocalExpPage'; // Now this file exists
+import LocalExpPage from './pages/LocalExpPage';
+import LocalExpDetailPage from './pages/LocalExpDetailPage';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/privacy" element={<PrivacyPolicyPage />} />
             <Route path="/local-exp" element={<LocalExpPage />} />
+            <Route path="/local-exp/:slug" element={<LocalExpDetailPage />} />
           </Routes>
         </Layout>
       </Router>
