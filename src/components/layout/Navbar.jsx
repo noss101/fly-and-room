@@ -17,7 +17,7 @@ const Navbar = () => {
         <div className="flex items-center">
           <img src="/logos/mainlogo.png" alt="Fly and Room Logo" className="h-12 md:h-14 mr-2" />
           <span className="text-2xl md:text-3xl font-bold">
-        <span className="text-primary">Fly</span> and <span className="text-secondary">room</span>
+        <span className="text-primary">Fly</span> and <span className="text-secondary">room.</span>
         </span>
         </div>
         
