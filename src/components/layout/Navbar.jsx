@@ -13,10 +13,10 @@ const Navbar = () => {
 
   return (
 <nav className="bg-transparent text-gray-800 py-4 shadow-md border-b border-gray-200">
-        <div className="container mx-auto px-4 flex justify-between items-center">
+        <div className="w-full px-4 flex justify-between items-center">
         <div className="flex items-center">
-          <img src="/logos/mainlogo.png" alt="Fly and Room Logo" className="h-10 mr-3" />
-          <span className="text-xl font-bold">
+          <img src="/logos/mainlogo.png" alt="Fly and Room Logo" className="h-12 md:h-14 mr-2" />
+          <span className="text-2xl md:text-3xl font-bold">
         <span className="text-primary">Fly</span> and <span className="text-secondary">room</span>
         </span>
         </div>
