@@ -19,7 +19,7 @@ const HotelFlightWidget = () => {
     };
   }, []);
 
-  return <div id="hotel-flight-widget-container" className="w-full"></div>;
+  return <div id="hotel-flight-widget-container" className="w-full shadow-lg"></div>;
 };
 
 export default HotelFlightWidget;
