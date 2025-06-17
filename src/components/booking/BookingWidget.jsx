@@ -7,7 +7,7 @@ const BookingWidget = () => {
   const { activeWidget, switchWidget } = useWidget();
 
   return (
-    <div className="bg-white rounded-2xl shadow-xl p-6 w-full max-w-4xl mx-auto">
+    <div className="bg-white rounded-2xl shadow-2xl p-6 w-full max-w-4xl mx-auto">
       <div className="mb-6 text-center">
         <div className="flex items-center justify-center mb-2">
           <img

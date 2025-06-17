@@ -19,7 +19,7 @@ const CarRentalWidget = () => {
     };
   }, []);
 
-  return <div id="car-rental-widget-container" className="w-full"></div>;
+  return <div id="car-rental-widget-container" className="w-full shadow-lg"></div>;
 };
 
 export default CarRentalWidget;
