@@ -8,13 +8,20 @@ const BookingWidget = () => {
 
   return (
     <div className="bg-white rounded-2xl shadow-xl p-6 w-full max-w-4xl mx-auto">
-     <div className="mb-6 text-center">
-  <h1 className="text-4xl font-bold mb-2">
-    <span className="text-[#0c58bb]">Fly</span>
-    <span className="text-[#ff5733]">&room.</span>
-  </h1>
-  <p className="text-gray-600">Find and book the best flights and hotels.</p>
-</div>
+      <div className="mb-6 text-center">
+        <div className="flex items-center justify-center mb-2">
+          <img
+            src="/logos/mainlogo.png"
+            alt="Fly and Room Logo"
+            className="h-9 mr-2"
+          />
+          <h1 className="text-4xl font-bold">
+            <span className="text-[#0c58bb]">Fly</span>
+            <span className="text-[#ff5733]">&room.</span>
+          </h1>
+        </div>
+        <p className="text-gray-600">Find and book the best flights and hotels.</p>
+      </div>
       
 <div className="flex justify-center space-x-4 mb-6">
   <button 
