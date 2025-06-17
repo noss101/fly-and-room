@@ -12,7 +12,7 @@ const Navbar = () => {
   ];
 
   return (
-<nav className="bg-navbg text-white py-4 shadow-md border-b border-gray-700">
+<nav className="bg-transparent text-gray-800 py-4 shadow-md border-b border-gray-200">
         <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center">
           <img src="/logos/mainlogo.png" alt="Fly and Room Logo" className="h-10 mr-3" />
@@ -27,20 +27,20 @@ const Navbar = () => {
             <NavLink 
               key={item.name}
               to={item.path}
-              className={({ isActive }) => 
-                `py-2 px-3 rounded-lg transition-colors hover:bg-primary ${
-                  isActive ? 'bg-primary font-bold' : ''
-                }`
-              }
-            >
+                className={({ isActive }) =>
+                  `py-2 px-3 rounded-lg transition-colors hover:bg-primary hover:text-white text-gray-800 ${
+                    isActive ? 'bg-primary text-white font-bold' : ''
+                  }`
+                }
+              >
               {item.name}
             </NavLink>
           ))}
         </div>
         
         {/* Mobile Menu Button */}
-        <button 
-          className="md:hidden text-white"
+        <button
+          className="md:hidden text-gray-800"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
           <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
