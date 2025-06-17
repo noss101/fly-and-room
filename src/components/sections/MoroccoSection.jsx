@@ -8,7 +8,7 @@ const MoroccoSection = () => {
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-center">
             Find Cheap Flights and Hotels in
             <span className="inline-flex items-center">
-              Morocco
+             Morocco
               <img src="/icons/moroccoflag.png" alt="Morocco flag" className="w-6 h-6 ml-2 inline-block" />
             </span>
           </h2>
