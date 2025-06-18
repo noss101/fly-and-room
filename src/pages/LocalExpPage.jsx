@@ -25,7 +25,7 @@ const LocalExpPage = () => {
             className="bg-white rounded-xl overflow-hidden shadow-lg transition-transform hover:scale-[1.02]"
           >
             <img
-              src={`/localexp/${exp.slug}.svg`}
+              src={`/images/${exp.slug}.svg`}
               alt={exp.title}
               className="h-48 w-full object-cover"
             />
