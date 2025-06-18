@@ -20,7 +20,7 @@ const BookingWidget = () => {
             <span className="text-[#ff5733]">&room.</span>
           </h1>
         </div>
-        <p className="text-gray-600 kapakana-600">Find and book the best flights and hotels.</p>
+        <p className="text-gray-600 kapakana-450">Find and book the best flights and hotels.</p>
       </div>
       
 <div className="flex justify-center space-x-4 mb-6">
