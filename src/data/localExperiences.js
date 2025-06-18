@@ -3,7 +3,8 @@ export const localExperiences = [
     slug: 'marrakech-luxury-riads',
     title: 'Marrakech Luxury Riads',
     description: 'Experience authentic Moroccan hospitality in beautifully restored traditional houses.',
-    details: 'Stay in historic riads located in the heart of Marrakech and enjoy personalized service in a luxurious setting.'
+    details: 'Stay in historic riads located in the heart of Marrakech and enjoy personalized service in a luxurious setting.',
+    image: '/images/MarrakechLuxuryRiads.jpg'
   },
   {
     slug: 'sahara-desert-adventures',
