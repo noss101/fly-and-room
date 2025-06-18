@@ -12,12 +12,12 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-transparent text-gray-800 py-4 shadow-md border-b border-gray-200 relative">
-      <div className="w-full px-4 flex justify-center items-center relative">
+    <nav className="bg-white text-gray-800 py-2 shadow-md border-b border-gray-200 relative">
+      <div className="w-full px-2 md:px-4 flex items-center justify-center md:justify-start relative">
         <img
           src="/logos/mainlogo.png"
           alt="Fly and Room Logo"
-          className="h-16 md:h-20"
+          className="h-12 md:h-16"
         />
         
         {/* Desktop Navigation */}
@@ -50,14 +50,14 @@ const Navbar = () => {
       
       {/* Mobile Menu */}
       {mobileMenuOpen && (
- <div className="md:hidden bg-navbg border-t border-gray-700 absolute top-16 left-0 right-0 z-50 py-4 px-4 shadow-lg">
+ <div className="md:hidden bg-white border-t border-gray-200 absolute top-14 left-0 right-0 z-50 py-4 px-4 shadow-lg">
       {navItems.map((item) => (
   <NavLink 
     key={item.name}
     to={item.path}
     className={({ isActive }) => 
-      `py-2 px-3 rounded-lg transition-colors hover:bg-primary ${
-        isActive ? 'bg-primary font-bold text-white' : 'text-gray-300 hover:text-white'
+      `py-2 px-3 rounded-lg transition-colors hover:bg-primary hover:text-white text-gray-800 ${
+        isActive ? 'bg-primary font-bold text-white' : ''
       }`
     }
   >
