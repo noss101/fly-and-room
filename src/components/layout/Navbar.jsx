@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -14,11 +14,13 @@ const Navbar = () => {
   return (
     <nav className="bg-white text-gray-800 py-2 shadow-md border-b border-gray-200 relative">
       <div className="w-full px-2 md:px-4 flex items-center justify-center md:justify-start relative">
-        <img
-          src="/logos/mainlogo.png"
-          alt="Fly and Room Logo"
-          className="h-12 md:h-16"
-        />
+        <Link to="/">
+          <img
+            src="/logos/mainlogo.png"
+            alt="Fly and Room Logo"
+            className="h-12 md:h-16"
+          />
+        </Link>
         
         {/* Desktop Navigation */}
         <div className="hidden md:flex space-x-6 absolute right-4 top-1/2 -translate-y-1/2">
@@ -27,7 +29,7 @@ const Navbar = () => {
               key={item.name}
               to={item.path}
                 className={({ isActive }) =>
-                  `py-2 px-3 rounded-lg transition-colors hover:bg-primary hover:text-white text-gray-800 ${
+                  `py-2 px-3 text-sm md:text-base rounded-lg transition-colors hover:bg-primary hover:text-white text-gray-800 ${
                     isActive ? 'bg-primary text-white font-bold' : ''
                   }`
                 }
@@ -56,7 +58,7 @@ const Navbar = () => {
     key={item.name}
     to={item.path}
     className={({ isActive }) => 
-      `py-2 px-3 rounded-lg transition-colors hover:bg-primary hover:text-white text-gray-800 ${
+      `py-2 px-3 text-sm md:text-base rounded-lg transition-colors hover:bg-primary hover:text-white text-gray-800 ${
         isActive ? 'bg-primary font-bold text-white' : ''
       }`
     }
