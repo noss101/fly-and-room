@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Kapakana:wght@300&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.kapakana-300 {
+  font-family: "Kapakana", cursive;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
