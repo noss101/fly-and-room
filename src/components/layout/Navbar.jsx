@@ -12,17 +12,16 @@ const Navbar = () => {
   ];
 
   return (
-<nav className="bg-transparent text-gray-800 py-4 shadow-md border-b border-gray-200">
-        <div className="w-full px-4 flex justify-between items-center">
-        <div className="flex items-center">
-          <img src="/logos/mainlogo.png" alt="Fly and Room Logo" className="h-12 md:h-14 mr-2" />
-          <span className="text-2xl md:text-3xl font-bold">
-        <span className="text-primary">Fly</span> and <span className="text-secondary">room.</span>
-        </span>
-        </div>
+    <nav className="bg-transparent text-gray-800 py-4 shadow-md border-b border-gray-200 relative">
+      <div className="w-full px-4 flex justify-center items-center relative">
+        <img
+          src="/logos/mainlogo.png"
+          alt="Fly and Room Logo"
+          className="h-16 md:h-20"
+        />
         
         {/* Desktop Navigation */}
-        <div className="hidden md:flex space-x-6">
+        <div className="hidden md:flex space-x-6 absolute right-4 top-1/2 -translate-y-1/2">
           {navItems.map((item) => (
             <NavLink 
               key={item.name}
@@ -40,7 +39,7 @@ const Navbar = () => {
         
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-gray-800"
+          className="md:hidden text-gray-800 absolute right-4 top-1/2 -translate-y-1/2"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
           <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
