@@ -62,7 +62,7 @@ const MoroccoSection = () => {
           Explore Local Experiences
         </Link>
       </div>
-      <div className="bg-[#272724] rounded-3xl shadow-2xl p-8 text-center text-white">
+      <div className="bg-[#272724] rounded-3xl shadow-2xl p-8 text-center text-white w-screen relative left-1/2 right-1/2 ml-[-50vw] mr-[-50vw]">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-center">All in One</h2>
         <p className="text-xl max-w-3xl mx-auto text-gray-300 mb-6">
           Browse all of our travel services in a single place and start planning your adventure today.
