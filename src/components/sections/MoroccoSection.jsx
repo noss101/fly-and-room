@@ -31,7 +31,11 @@ const MoroccoSection = () => {
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6 text-left">
             {previewExperiences.map((exp, index) => (
-              <div key={index} className="bg-white rounded-xl overflow-hidden shadow-lg">
+              <Link
+                key={index}
+                to={`/local-exp/${exp.slug}`}
+                className="bg-white rounded-xl overflow-hidden shadow-lg transition-transform hover:scale-[1.02]"
+              >
                 <img
                   src={exp.image ? exp.image : `/localexp/${exp.slug}.svg`}
                   alt={exp.title}
@@ -41,7 +45,7 @@ const MoroccoSection = () => {
                   <h3 className="text-lg font-bold mb-2">{exp.title}</h3>
                   <p className="text-gray-600 text-sm">{exp.description}</p>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
           <Link
