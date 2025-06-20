@@ -68,8 +68,8 @@ const ServicesSection = () => {
             }}
             className="bg-white rounded-xl shadow-lg p-6 transition-transform hover:scale-[1.02]"
           >
-          <div
-            className={`${service.color} w-14 h-14 rounded-full flex items-center justify-center mb-4`}
+            <div
+            className={`${service.color} w-14 h-14 flex items-center justify-center mb-4`}
           >
             {service.iconSrc ? (
               <img src={service.iconSrc} alt={service.title} className="w-8 h-8" />
