@@ -15,9 +15,14 @@ module.exports = {
           '0%': { transform: 'translateX(50px)', opacity: '0' },
           '100%': { transform: 'translateX(0)', opacity: '1' },
         },
+        marquee: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
       },
       animation: {
         'slide-left': 'slide-left 1s ease-in-out',
+        marquee: 'marquee 20s linear infinite',
       },
     },
   },
