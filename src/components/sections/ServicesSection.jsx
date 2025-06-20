@@ -1,7 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useWidget } from '../../context/WidgetContext';
 
 const ServicesSection = () => {
+  const { switchWidget } = useWidget();
+
   const services = [
     {
       title: 'Flights & Hotels',
@@ -9,6 +12,7 @@ const ServicesSection = () => {
       iconSrc: '/icons/newflighticon.png',
       color: 'bg-blue-100',
       link: '/?service=hotel-flight#booking-widget',
+      widget: 'hotel-flight',
     },
     {
       title: 'Car Rental',
@@ -16,6 +20,7 @@ const ServicesSection = () => {
       iconSrc: '/icons/newcarrentalicon.png',
       color: 'bg-orange-100',
       link: '/?service=car-rental#booking-widget',
+      widget: 'car-rental',
     },
     {
       title: 'Trips',
@@ -23,6 +28,7 @@ const ServicesSection = () => {
       iconSrc: '/icons/tripsicon.png',
       color: 'bg-purple-100',
       link: '/?service=trips#booking-widget',
+      widget: 'trips',
     },
     {
       title: 'Pickups',
@@ -30,6 +36,7 @@ const ServicesSection = () => {
       iconSrc: '/icons/pickupsicon.png',
       color: 'bg-green-100',
       link: '/?service=pickups#booking-widget',
+      widget: 'pickups',
     },
     {
       title: 'eSIM',
@@ -37,6 +44,7 @@ const ServicesSection = () => {
       iconSrc: '/icons/esimicon.png',
       color: 'bg-yellow-100',
       link: '/?service=esim#booking-widget',
+      widget: 'esim',
     },
   ];
 
@@ -50,12 +58,13 @@ const ServicesSection = () => {
             key={index}
             to={service.link}
             onClick={() => {
-              const el = document.getElementById('booking-widget');
-              if (el) {
-                el.scrollIntoView({ behavior: 'smooth' });
-              } else {
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-              }
+              switchWidget(service.widget);
+              setTimeout(() => {
+                const el = document.getElementById('booking-widget');
+                if (el) {
+                  el.scrollIntoView({ behavior: 'smooth' });
+                }
+              }, 0);
             }}
             className="bg-white rounded-xl shadow-lg p-6 transition-transform hover:scale-[1.02]"
           >
