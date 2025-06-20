@@ -48,7 +48,7 @@ const BookingWidget = () => {
           onClick={() => switchWidget('hotel-flight')}
         >
           {/* Updated icon size from w-6 h-6 to w-8 h-8 */}
-          <img src="/icons/flyhotel.png" alt="Flights & Hotels" className="w-8 h-8 mr-2" />
+          <img src="/icons/newflighticon.png" alt="Flights & Hotels" className="w-8 h-8 mr-2" />
           Flights & Hotels
         </button>
         <button
@@ -59,7 +59,7 @@ const BookingWidget = () => {
           }`}
           onClick={() => switchWidget('car-rental')}
         >
-          <img src="/icons/carrental.png" alt="Car Rental" className="w-8 h-8 mr-2" />
+          <img src="/icons/newcarrentalicon.png" alt="Car Rental" className="w-8 h-8 mr-2" />
           Car Rental
         </button>
         <button
