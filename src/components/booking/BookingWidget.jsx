@@ -4,6 +4,7 @@ import HotelFlightWidget from './HotelFlightWidget';
 import CarRentalWidget from './CarRentalWidget';
 import TripsWidget from './TripsWidget';
 import PickupsWidget from './PickupsWidget';
+import EsimWidget from './EsimWidget';
 
 const BookingWidget = () => {
   const { activeWidget, switchWidget } = useWidget();
@@ -71,12 +72,24 @@ const BookingWidget = () => {
           <img src="/icons/pickupsicon.png" alt="Pickups" className="w-8 h-8 mr-2" />
           Pickups
         </button>
-</div>
+        <button
+          className={`flex items-center px-4 py-2 rounded-lg transition-all ${
+            activeWidget === 'esim'
+              ? 'bg-[#0c58bb] text-white'
+              : 'bg-gray-100 text-gray-700'
+          }`}
+          onClick={() => switchWidget('esim')}
+        >
+          <img src="/icons/esimicon.png" alt="eSIM" className="w-8 h-8 mr-2" />
+          eSIM
+        </button>
+      </div>
       <div className="widget-container min-h-[300px]">
         {activeWidget === 'hotel-flight' && <HotelFlightWidget />}
         {activeWidget === 'car-rental' && <CarRentalWidget />}
         {activeWidget === 'trips' && <TripsWidget />}
         {activeWidget === 'pickups' && <PickupsWidget />}
+        {activeWidget === 'esim' && <EsimWidget />}
       </div>
     </div>
   );
