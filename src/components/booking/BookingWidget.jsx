@@ -3,6 +3,7 @@ import { useWidget } from '../../context/WidgetContext';
 import HotelFlightWidget from './HotelFlightWidget';
 import CarRentalWidget from './CarRentalWidget';
 import TripsWidget from './TripsWidget';
+import PickupsWidget from './PickupsWidget';
 
 const BookingWidget = () => {
   const { activeWidget, switchWidget } = useWidget();
@@ -24,46 +25,58 @@ const BookingWidget = () => {
         <p className="text-gray-600 kapakana-450">Let Morocco Shift Your Soul.</p>
       </div>
       
-<div className="flex justify-center space-x-4 mb-6">
-  <button 
-    className={`flex items-center px-4 py-2 rounded-lg transition-all ${
-      activeWidget === 'hotel-flight' 
-        ? 'bg-[#0c58bb] text-white' 
-        : 'bg-gray-100 text-gray-700'
-    }`}
-    onClick={() => switchWidget('hotel-flight')}
-  >
-    {/* Updated icon size from w-6 h-6 to w-8 h-8 */}
-    <img src="/icons/flyhotel.png" alt="Flights & Hotels" className="w-8 h-8 mr-2" />
-    Flights & Hotels
-  </button>
-  <button
-    className={`flex items-center px-4 py-2 rounded-lg transition-all ${
-      activeWidget === 'car-rental'
-        ? 'bg-[#0c58bb] text-white'
-        : 'bg-gray-100 text-gray-700'
-    }`}
-    onClick={() => switchWidget('car-rental')}
-  >
-    <img src="/icons/carrental.png" alt="Car Rental" className="w-8 h-8 mr-2" />
-    Car Rental
-  </button>
-  <button
-    className={`flex items-center px-4 py-2 rounded-lg transition-all ${
-      activeWidget === 'trips'
-        ? 'bg-[#0c58bb] text-white'
-        : 'bg-gray-100 text-gray-700'
-    }`}
-    onClick={() => switchWidget('trips')}
-  >
-    <img src="/icons/tripsicon.png" alt="Trips" className="w-8 h-8 mr-2" />
-    Trips
-  </button>
+      <div className="flex flex-wrap justify-center gap-4 mb-6">
+        <button
+          className={`flex items-center px-4 py-2 rounded-lg transition-all ${
+            activeWidget === 'hotel-flight'
+              ? 'bg-[#0c58bb] text-white'
+              : 'bg-gray-100 text-gray-700'
+          }`}
+          onClick={() => switchWidget('hotel-flight')}
+        >
+          {/* Updated icon size from w-6 h-6 to w-8 h-8 */}
+          <img src="/icons/flyhotel.png" alt="Flights & Hotels" className="w-8 h-8 mr-2" />
+          Flights & Hotels
+        </button>
+        <button
+          className={`flex items-center px-4 py-2 rounded-lg transition-all ${
+            activeWidget === 'car-rental'
+              ? 'bg-[#0c58bb] text-white'
+              : 'bg-gray-100 text-gray-700'
+          }`}
+          onClick={() => switchWidget('car-rental')}
+        >
+          <img src="/icons/carrental.png" alt="Car Rental" className="w-8 h-8 mr-2" />
+          Car Rental
+        </button>
+        <button
+          className={`flex items-center px-4 py-2 rounded-lg transition-all ${
+            activeWidget === 'trips'
+              ? 'bg-[#0c58bb] text-white'
+              : 'bg-gray-100 text-gray-700'
+          }`}
+          onClick={() => switchWidget('trips')}
+        >
+          <img src="/icons/tripsicon.png" alt="Trips" className="w-8 h-8 mr-2" />
+          Trips
+        </button>
+        <button
+          className={`flex items-center px-4 py-2 rounded-lg transition-all ${
+            activeWidget === 'pickups'
+              ? 'bg-[#0c58bb] text-white'
+              : 'bg-gray-100 text-gray-700'
+          }`}
+          onClick={() => switchWidget('pickups')}
+        >
+          <img src="/icons/pickupsicon.png" alt="Pickups" className="w-8 h-8 mr-2" />
+          Pickups
+        </button>
 </div>
       <div className="widget-container min-h-[300px]">
         {activeWidget === 'hotel-flight' && <HotelFlightWidget />}
         {activeWidget === 'car-rental' && <CarRentalWidget />}
         {activeWidget === 'trips' && <TripsWidget />}
+        {activeWidget === 'pickups' && <PickupsWidget />}
       </div>
     </div>
   );
