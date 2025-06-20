@@ -6,14 +6,14 @@ const ServicesSection = () => {
     {
       title: 'Flights & Hotels',
       description: 'Search and book flights and hotels in one place.',
-      iconSrc: '/icons/flyhotel.png',
+      iconSrc: '/icons/newflighticon.png',
       color: 'bg-blue-100',
       link: '/?service=hotel-flight#booking-widget',
     },
     {
       title: 'Car Rental',
       description: 'Find the best rates on car rentals for your trip.',
-      iconSrc: '/icons/carrental.png',
+      iconSrc: '/icons/newcarrentalicon.png',
       color: 'bg-orange-100',
       link: '/?service=car-rental#booking-widget',
     },
