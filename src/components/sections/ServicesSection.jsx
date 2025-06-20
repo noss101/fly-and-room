@@ -40,14 +40,17 @@ const ServicesSection = () => {
     },
   ];
 
+  const scrollingServices = [...services, ...services];
+
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {services.map((service, index) => (
-        <Link
-          key={index}
-          to={service.link}
-          className="bg-white rounded-xl shadow-lg p-6 transition-transform hover:scale-[1.02] animate-slide-left"
-        >
+    <div className="overflow-hidden">
+      <div className="flex w-max space-x-8 animate-marquee">
+        {scrollingServices.map((service, index) => (
+          <Link
+            key={index}
+            to={service.link}
+            className="bg-white rounded-xl shadow-lg p-6 transition-transform hover:scale-[1.02]"
+          >
           <div
             className={`${service.color} w-14 h-14 rounded-full flex items-center justify-center mb-4`}
           >
@@ -59,9 +62,10 @@ const ServicesSection = () => {
           </div>
           <h3 className="text-xl font-bold mb-2">{service.title}</h3>
           <p className="text-gray-600 mb-4">{service.description}</p>
-          <span className="text-primary font-semibold hover:underline">Book Now</span>
-        </Link>
-      ))}
+            <span className="text-primary font-semibold hover:underline">Book Now</span>
+          </Link>
+        ))}
+      </div>
     </div>
   );
 };
