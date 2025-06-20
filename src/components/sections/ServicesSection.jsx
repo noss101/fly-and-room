@@ -43,9 +43,10 @@ const ServicesSection = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {services.map((service, index) => (
-        <div
+        <Link
           key={index}
-          className="bg-white rounded-xl shadow-lg p-6 transition-transform hover:scale-[1.02]"
+          to={service.link}
+          className="bg-white rounded-xl shadow-lg p-6 transition-transform hover:scale-[1.02] animate-slide-left"
         >
           <div
             className={`${service.color} w-14 h-14 rounded-full flex items-center justify-center mb-4`}
@@ -58,13 +59,8 @@ const ServicesSection = () => {
           </div>
           <h3 className="text-xl font-bold mb-2">{service.title}</h3>
           <p className="text-gray-600 mb-4">{service.description}</p>
-          <Link
-            to={service.link}
-            className="text-primary font-semibold hover:underline"
-          >
-            Book Now
-          </Link>
-        </div>
+          <span className="text-primary font-semibold hover:underline">Book Now</span>
+        </Link>
       ))}
     </div>
   );

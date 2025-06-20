@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { localExperiences } from '../../data/localExperiences';
+import ServicesSection from './ServicesSection';
 
 const MoroccoSection = () => {
   const previewExperiences = localExperiences.slice(0, 3);
@@ -54,16 +55,23 @@ const MoroccoSection = () => {
               </Link>
             ))}
           </div>
-          <Link
-            to="/local-exp"
-            className="inline-block mt-4 px-6 py-3 bg-primary text-white rounded-lg shadow hover:bg-primary/90"
-          >
-            Explore Local Experiences
-          </Link>
-        </div>
+        <Link
+          to="/local-exp"
+          className="inline-block mt-4 px-6 py-3 bg-primary text-white rounded-lg shadow hover:bg-primary/90"
+        >
+          Explore Local Experiences
+        </Link>
       </div>
-    </section>
-  );
+      <div className="bg-[#272724] rounded-3xl shadow-2xl p-8 text-center text-white">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-center">All in One</h2>
+        <p className="text-xl max-w-3xl mx-auto text-gray-300 mb-6">
+          Browse all of our travel services in a single place and start planning your adventure today.
+        </p>
+        <ServicesSection />
+      </div>
+    </div>
+  </section>
+);
 };
 
 export default MoroccoSection;
