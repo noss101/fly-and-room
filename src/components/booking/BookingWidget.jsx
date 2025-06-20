@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useWidget } from '../../context/WidgetContext';
+import { useSearchParams } from 'react-router-dom';
 import HotelFlightWidget from './HotelFlightWidget';
 import CarRentalWidget from './CarRentalWidget';
 import TripsWidget from './TripsWidget';
@@ -8,9 +9,20 @@ import EsimWidget from './EsimWidget';
 
 const BookingWidget = () => {
   const { activeWidget, switchWidget } = useWidget();
+  const [searchParams] = useSearchParams();
+
+  useEffect(() => {
+    const service = searchParams.get('service');
+    if (service) {
+      switchWidget(service);
+    }
+  }, [searchParams, switchWidget]);
 
   return (
-    <div className="bg-white rounded-2xl shadow-2xl p-6 w-full max-w-4xl mx-auto">
+    <div
+      id="booking-widget"
+      className="bg-white rounded-2xl shadow-2xl p-6 w-full max-w-4xl mx-auto"
+    >
       <div className="mb-6 text-center">
         <div className="flex items-center justify-center mb-2">
           <img
