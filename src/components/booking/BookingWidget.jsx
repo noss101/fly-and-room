@@ -2,6 +2,7 @@ import React from 'react';
 import { useWidget } from '../../context/WidgetContext';
 import HotelFlightWidget from './HotelFlightWidget';
 import CarRentalWidget from './CarRentalWidget';
+import TripsWidget from './TripsWidget';
 
 const BookingWidget = () => {
   const { activeWidget, switchWidget } = useWidget();
@@ -36,21 +37,33 @@ const BookingWidget = () => {
     <img src="/icons/flyhotel.png" alt="Flights & Hotels" className="w-8 h-8 mr-2" />
     Flights & Hotels
   </button>
-  <button 
+  <button
     className={`flex items-center px-4 py-2 rounded-lg transition-all ${
-      activeWidget === 'car-rental' 
-        ? 'bg-[#0c58bb] text-white' 
+      activeWidget === 'car-rental'
+        ? 'bg-[#0c58bb] text-white'
         : 'bg-gray-100 text-gray-700'
     }`}
     onClick={() => switchWidget('car-rental')}
   >
-    {/* Updated icon size from w-6 h-6 to w-8 h-8 */}
     <img src="/icons/carrental.png" alt="Car Rental" className="w-8 h-8 mr-2" />
     Car Rental
   </button>
+  <button
+    className={`flex items-center px-4 py-2 rounded-lg transition-all ${
+      activeWidget === 'trips'
+        ? 'bg-[#0c58bb] text-white'
+        : 'bg-gray-100 text-gray-700'
+    }`}
+    onClick={() => switchWidget('trips')}
+  >
+    <img src="/icons/tripsicon.png" alt="Trips" className="w-8 h-8 mr-2" />
+    Trips
+  </button>
 </div>
       <div className="widget-container min-h-[300px]">
-        {activeWidget === 'hotel-flight' ? <HotelFlightWidget /> : <CarRentalWidget />}
+        {activeWidget === 'hotel-flight' && <HotelFlightWidget />}
+        {activeWidget === 'car-rental' && <CarRentalWidget />}
+        {activeWidget === 'trips' && <TripsWidget />}
       </div>
     </div>
   );
