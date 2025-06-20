@@ -18,6 +18,12 @@ const MoroccoSection = () => {
           <p className="text-xl max-w-3xl mx-auto text-gray-700">
             Explore Morocco with great deals on flights and accommodations. Search for affordable travel options and compare prices on top hotels in Marrakech, Casablanca, and beyond.
           </p>
+          <Link
+            to="/services"
+            className="inline-block mt-4 px-6 py-3 bg-primary text-white rounded-lg shadow hover:bg-primary/90"
+          >
+            Our Services
+          </Link>
         </div>
         <div className="bg-white/70 backdrop-blur-md rounded-3xl shadow-2xl p-8 text-center">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-center">
