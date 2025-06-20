@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { localExperiences } from '../../data/localExperiences';
 
 const MoroccoSection = () => {
+  const previewExperiences = localExperiences.slice(0, 3);
   return (
     <section className="py-16">
       <div className="container mx-auto px-4 space-y-8">
@@ -27,6 +29,21 @@ const MoroccoSection = () => {
           <p className="text-xl max-w-3xl mx-auto text-gray-700">
             Discover Morocco's must-see attractions and unique cultural experiences from bustling souks to serene desert camps.
           </p>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6 text-left">
+            {previewExperiences.map((exp, index) => (
+              <div key={index} className="bg-white rounded-xl overflow-hidden shadow-lg">
+                <img
+                  src={exp.image ? exp.image : `/localexp/${exp.slug}.svg`}
+                  alt={exp.title}
+                  className="h-32 w-full object-cover"
+                />
+                <div className="p-4">
+                  <h3 className="text-lg font-bold mb-2">{exp.title}</h3>
+                  <p className="text-gray-600 text-sm">{exp.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
           <Link
             to="/local-exp"
             className="inline-block mt-4 px-6 py-3 bg-primary text-white rounded-lg shadow hover:bg-primary/90"
