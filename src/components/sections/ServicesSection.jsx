@@ -49,6 +49,14 @@ const ServicesSection = () => {
           <Link
             key={index}
             to={service.link}
+            onClick={() => {
+              const el = document.getElementById('booking-widget');
+              if (el) {
+                el.scrollIntoView({ behavior: 'smooth' });
+              } else {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }
+            }}
             className="bg-white rounded-xl shadow-lg p-6 transition-transform hover:scale-[1.02]"
           >
           <div
