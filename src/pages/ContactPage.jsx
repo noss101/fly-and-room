@@ -4,7 +4,7 @@ const ContactPage = () => {
   return (
     <div className="container mx-auto px-4 py-12">
       <div className="max-w-3xl mx-auto">
-        <h1 className="text-4xl font-bold mb-6 text-center">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-center text-[#272724]">
           Contact <span className="text-primary">Us</span>
         </h1>
         

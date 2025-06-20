@@ -30,7 +30,7 @@ const BookingWidget = () => {
             alt="Fly and Room Logo"
             className="h-9 mr-2"
           />
-          <h1 className="text-4xl font-bold">
+          <h1 className="text-3xl sm:text-4xl font-bold text-[#272724]">
             <span className="text-[#0c58bb]">Fly</span>
             <span className="text-[#ff5733]">&room.</span>
           </h1>
