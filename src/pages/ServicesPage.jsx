@@ -12,7 +12,7 @@ const ServicesPage = () => {
           Discover the range of travel services we offer to make your journey seamless and memorable.
         </p>
       </div>
-      <ServicesSection />
+      <ServicesSection animate={false} />
     </div>
   );
 };
