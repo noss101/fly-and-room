@@ -19,13 +19,8 @@ const Footer = () => {
   <img
     src="/logos/newlogoo.png"
     alt="Fly and Room Logo"
-    className="h-10 sm:h-12 md:h-14 w-auto mr-3"
+    className="h-16 sm:h-20 md:h-24 w-auto"
   />
-  <span className="text-xl font-bold hover:no-underline">
-    <span className="text-primary">Fly</span>{' '}
-    and{' '}
-    <span className="text-secondary">room.</span>
-  </span>
 </Link>
               <p className="mt-2 text-gray-600 max-w-md text-sm md:text-base">
               Your trusted partner for flights, hotels, and car rentals in Morocco and beyond.
