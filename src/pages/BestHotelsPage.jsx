@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { bestHotels } from '../data/bestHotels';
+import { bestHotels } from '../data/bestHotels.jsx';
 
 const BestHotelsPage = () => {
   const hotels = bestHotels;
