@@ -19,6 +19,19 @@ const HotelDetailPage = () => {
       <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-[#272724]">
         {hotel.title}
       </h1>
+      {hotel.images && (
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-8">
+          {hotel.images.map((src, idx) => (
+            <div key={idx} className="rounded-lg overflow-hidden shadow">
+              <img
+                src={src}
+                alt={`${hotel.title} ${idx + 1}`}
+                className="w-full h-40 object-cover"
+              />
+            </div>
+          ))}
+        </div>
+      )}
       <p className="text-gray-700 mb-8 whitespace-pre-line">{hotel.details}</p>
       <Link to="/best-hotels" className="text-primary font-semibold hover:underline">
         &larr; Back to hotels

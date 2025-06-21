@@ -46,7 +46,19 @@ Final Thoughts
 Hilton Al Houara Resort & Spa is more than a destination – it’s a full Moroccan escape. With premium rooms, delicious dining, world-class amenities, and nearby cultural gems, your stay will be unforgettable.
 
 Book at Hilton Al Houara: https://www3.hilton.com/en/hotels/morocco/hilton-tangier-al-houara-resort-and-spa-TNGAHHI/index.html`,
-    image: '/images/tanger_hiltonalhouara.jpg'
+    image: '/images/tanger_hiltonalhouara.jpg',
+    images: [
+      '/images/tanger_hiltonalhouara_1.jpg',
+      '/images/tanger_hiltonalhouara_02.jpg',
+      '/images/tanger_hiltonalhouara_3.jpg',
+      '/images/tanger_hiltonalhouara_4.jpg',
+      '/images/tanger_hiltonalhouara_5.jpg',
+      '/images/tanger_hiltonalhouara_6.jpg',
+      '/images/tanger_hiltonalhouara_7.jpg',
+      '/images/tanger_hiltonalhouara_8.jpg',
+      '/images/tanger_hiltonalhouara_9.jpg',
+      '/images/tanger_hiltonalhouara_10.jpg'
+    ]
   },
   {
     slug: 'royal-mansour-marrakech',
