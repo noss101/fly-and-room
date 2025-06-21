@@ -71,7 +71,7 @@ const MoroccoSection = () => {
       </div>
       <div className="bg-[#F6F7EA] shadow-2xl p-8 text-center w-screen relative left-1/2 right-1/2 ml-[-50vw] mr-[-50vw]">
         <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 text-[#272724]">Our Partners</h3>
-        <div className="flex justify-center items-center space-x-6">
+        <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6">
           <img
             src="/icons/esimparicon.png"
             alt="eSIM partner"
