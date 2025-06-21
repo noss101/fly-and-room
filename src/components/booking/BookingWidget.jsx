@@ -29,12 +29,8 @@ const BookingWidget = () => {
           <img
             src="/logos/newlogoo.png"
             alt="Fly and Room Logo"
-            className="h-10 sm:h-12 md:h-14 w-auto mr-2"
+            className="h-20 sm:h-24 md:h-32 w-auto"
           />
-          <h1 className="text-3xl sm:text-4xl font-bold text-[#272724]">
-            <span className="text-[#0c58bb]">Fly</span>
-            <span className="text-[#ff5733]">&room.</span>
-          </h1>
         </div>
         <p className="text-gray-600 kapakana-450">Let Morocco Shift Your Soul.</p>
       </div>
