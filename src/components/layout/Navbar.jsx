@@ -22,9 +22,9 @@ const Navbar = () => {
           }}
         >
           <img
-            src="/logos/mainlogo.png"
+            src="/logos/newlogoo.png"
             alt="Fly and Room Logo"
-            className="h-12 md:h-16"
+            className="h-16 md:h-24"
           />
         </Link>
         
