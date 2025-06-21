@@ -25,14 +25,9 @@ const BookingWidget = () => {
       className="bg-white rounded-2xl shadow-2xl p-6 w-full max-w-4xl mx-auto"
     >
       <div className="mb-6 text-center">
-        <div className="flex items-center justify-center mb-2">
-          <img
-            src="/logos/newlogoo.png"
-            alt="Fly and Room Logo"
-            className="h-20 sm:h-24 md:h-32 w-auto"
-          />
-        </div>
-        <p className="text-gray-600 kapakana-450">Let Morocco Shift Your Soul.</p>
+        <p className="kapakana-450" style={{ color: '#272724' }}>
+          All in One Place for Your Next Journey.
+        </p>
       </div>
       
       <div className="flex flex-wrap justify-center gap-4 mb-6">
