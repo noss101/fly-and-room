@@ -27,9 +27,9 @@ const BookingWidget = () => {
       <div className="mb-6 text-center">
         <div className="flex items-center justify-center mb-2">
           <img
-            src="/logos/mainlogo.png"
+            src="/logos/newlogoo.png"
             alt="Fly and Room Logo"
-            className="h-9 mr-2"
+            className="h-10 sm:h-12 md:h-14 w-auto mr-2"
           />
           <h1 className="text-3xl sm:text-4xl font-bold text-[#272724]">
             <span className="text-[#0c58bb]">Fly</span>
