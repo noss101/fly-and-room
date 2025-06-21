@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useWidget } from '../../context/WidgetContext';
 
-const ServicesSection = () => {
+const ServicesSection = ({ animate = true }) => {
   const { switchWidget } = useWidget();
 
   const services = [
@@ -48,11 +48,15 @@ const ServicesSection = () => {
     },
   ];
 
-  const scrollingServices = [...services, ...services];
+  const scrollingServices = animate ? [...services, ...services] : services;
 
   return (
-    <div className="overflow-hidden">
-      <div className="flex w-max space-x-8 animate-marquee">
+    <div className={animate ? 'overflow-hidden' : ''}>
+      <div
+        className={`flex ${
+          animate ? 'w-max space-x-8 animate-marquee' : 'flex-wrap justify-center gap-8'
+        }`}
+      >
         {scrollingServices.map((service, index) => (
           <Link
             key={index}
