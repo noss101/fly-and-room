@@ -3,11 +3,12 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const footerLinks = [
-    { name: "Home", path: "/" },
-    { name: "Services", path: "/services" },
-    { name: "Contact Us", path: "/contact" },
-    { name: "Privacy Policy", path: "/privacy" },
-    { name: "Local Exp", path: "/local-exp" },
+    { name: 'Home', path: '/' },
+    { name: 'Services', path: '/services' },
+    { name: 'Contact Us', path: '/contact' },
+    { name: 'Privacy Policy', path: '/privacy' },
+    { name: 'Local Exp', path: '/local-exp' },
+    { name: 'Best Hotels', path: '/best-hotels' },
   ];
 
   return (

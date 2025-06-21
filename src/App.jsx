@@ -9,6 +9,7 @@ import ContactPage from './pages/ContactPage';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 import LocalExpPage from './pages/LocalExpPage';
 import LocalExpDetailPage from './pages/LocalExpDetailPage';
+import BestHotelsPage from './pages/BestHotelsPage';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="/services" element={<ServicesPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/privacy" element={<PrivacyPolicyPage />} />
+            <Route path="/best-hotels" element={<BestHotelsPage />} />
             <Route path="/local-exp" element={<LocalExpPage />} />
             <Route path="/local-exp/:slug" element={<LocalExpDetailPage />} />
           </Routes>
