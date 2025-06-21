@@ -6,26 +6,17 @@ const PartnersSection = () => (
       Our Partners
     </h3>
     <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6">
-      <img
-        src="/icons/esimparicon.png"
-        alt="eSIM partner"
-        className="h-16 sm:h-20 md:h-24 w-auto"
-      />
-      <img
-        src="/icons/localrenticonpar.png"
-        alt="LocalRent partner"
-        className="h-16 sm:h-20 md:h-24 w-auto"
-      />
-      <img
-        src="/icons/pickupsparicon.png"
-        alt="Pickups partner"
-        className="h-16 sm:h-20 md:h-24 w-auto"
-      />
-      <img
-        src="/icons/tripiconpar.png"
-        alt="Trip partner"
-        className="h-16 sm:h-20 md:h-24 w-auto"
-      />
+      {["/icons/esimparicon.png", "/icons/localrenticonpar.png", "/icons/pickupsparicon.png", "/icons/tripiconpar.png"].map((src) => (
+        <div
+          key={src}
+          style={{
+            WebkitMask: `url(${src}) no-repeat center / contain`,
+            mask: `url(${src}) no-repeat center / contain`,
+            backgroundColor: "#272724",
+          }}
+          className="h-16 sm:h-20 md:h-24 w-16 sm:w-20 md:w-24"
+        />
+      ))}
     </div>
   </div>
 );
