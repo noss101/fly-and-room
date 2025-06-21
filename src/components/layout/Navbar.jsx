@@ -20,7 +20,6 @@ const Navbar = () => {
             setMobileMenuOpen(false);
             window.scrollTo({ top: 0, behavior: 'smooth' });
           }}
-          className="absolute left-1/2 -translate-x-1/2 md:static md:transform-none"
         >
           <img
             src="/logos/newlogoo.png"
