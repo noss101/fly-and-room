@@ -32,7 +32,11 @@ const HotelDetailPage = () => {
           ))}
         </div>
       )}
-      <p className="text-gray-700 mb-8 whitespace-pre-line">{hotel.details}</p>
+      {typeof hotel.details === 'string' ? (
+        <p className="text-gray-700 mb-8 whitespace-pre-line">{hotel.details}</p>
+      ) : (
+        <div className="text-gray-700 mb-8">{hotel.details}</div>
+      )}
       <Link to="/best-hotels" className="text-primary font-semibold hover:underline">
         &larr; Back to hotels
       </Link>
