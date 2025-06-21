@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { bestHotels } from '../data/bestHotels';
+import { bestHotels } from '../data/bestHotels.jsx';
 
 const HotelDetailPage = () => {
   const { slug } = useParams();
