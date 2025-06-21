@@ -8,7 +8,7 @@ const MoroccoSection = () => {
   return (
     <section className="py-16">
       <div className="container mx-auto px-4 space-y-8">
-        <div className="bg-[#272724] rounded-3xl shadow-2xl p-8 text-center text-white">
+        <div className="bg-[#272724] shadow-2xl p-8 text-center text-white w-screen relative left-1/2 right-1/2 ml-[-50vw] mr-[-50vw]">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-center">
             Find Cheap Flights and Hotels in{' '}
             <span className="inline-flex items-center">
