@@ -69,31 +69,6 @@ const MoroccoSection = () => {
         </p>
         <ServicesSection />
       </div>
-      <div className="bg-[#F6F7EA] shadow-2xl p-8 text-center w-screen relative left-1/2 right-1/2 ml-[-50vw] mr-[-50vw]">
-        <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 text-[#272724]">Our Partners</h3>
-        <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6">
-          <img
-            src="/icons/esimparicon.png"
-            alt="eSIM partner"
-            className="h-16 sm:h-20 md:h-24 w-auto"
-          />
-          <img
-            src="/icons/localrenticonpar.png"
-            alt="LocalRent partner"
-            className="h-16 sm:h-20 md:h-24 w-auto"
-          />
-          <img
-            src="/icons/pickupsparicon.png"
-            alt="Pickups partner"
-            className="h-16 sm:h-20 md:h-24 w-auto"
-          />
-          <img
-            src="/icons/tripiconpar.png"
-            alt="Trip partner"
-            className="h-16 sm:h-20 md:h-24 w-auto"
-          />
-        </div>
-      </div>
     </div>
   </section>
 );
