@@ -63,24 +63,24 @@ const Navbar = () => {
       
       {/* Mobile Menu */}
       {mobileMenuOpen && (
- <div className="md:hidden bg-white border-t border-gray-200 absolute top-14 left-0 right-0 z-50 py-4 px-4 shadow-lg">
-        {navItems.map((item) => (
-          <NavLink
-            key={item.name}
-            to={item.path}
-            onClick={() => {
-              setMobileMenuOpen(false);
-              window.scrollTo({ top: 0, behavior: 'smooth' });
-            }}
-            className={({ isActive }) =>
-              `py-2 px-3 text-sm md:text-base rounded-lg transition-colors hover:bg-primary hover:text-white text-gray-800 ${
-                isActive ? 'bg-primary font-bold text-white' : ''
-              }`
-            }
-          >
-            {item.name}
-          </NavLink>
-        ))}
+        <div className="md:hidden bg-white border-t border-gray-200 absolute top-14 left-0 right-0 z-50 py-4 px-4 shadow-lg flex flex-col items-center space-y-2">
+          {navItems.map((item) => (
+            <NavLink
+              key={item.name}
+              to={item.path}
+              onClick={() => {
+                setMobileMenuOpen(false);
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}
+              className={({ isActive }) =>
+                `block w-full text-center py-2 px-3 text-sm md:text-base rounded-lg transition-colors hover:bg-primary hover:text-white text-gray-800 ${
+                  isActive ? 'bg-primary font-bold text-white' : ''
+                }`
+              }
+            >
+              {item.name}
+            </NavLink>
+          ))}
         </div>
       )}
     </nav>
