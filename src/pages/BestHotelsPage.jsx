@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { bestHotels } from '../data/bestHotels';
 
 const BestHotelsPage = () => {
@@ -17,8 +18,9 @@ const BestHotelsPage = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {hotels.map((hotel, index) => (
-          <div
+          <Link
             key={index}
+            to={`/best-hotels/${hotel.slug}`}
             className="bg-white rounded-xl overflow-hidden shadow-lg transition-transform hover:scale-[1.02]"
           >
             <img
@@ -29,9 +31,9 @@ const BestHotelsPage = () => {
             <div className="p-6">
               <h3 className="text-xl font-bold mb-2">{hotel.title}</h3>
               <p className="text-gray-600 mb-4">{hotel.description}</p>
-              <span className="text-primary font-semibold">Discover Hotel</span>
+              <span className="text-primary font-semibold hover:underline">Discover Hotel</span>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

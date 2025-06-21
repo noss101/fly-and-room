@@ -10,6 +10,7 @@ import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 import LocalExpPage from './pages/LocalExpPage';
 import LocalExpDetailPage from './pages/LocalExpDetailPage';
 import BestHotelsPage from './pages/BestHotelsPage';
+import HotelDetailPage from './pages/HotelDetailPage';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/privacy" element={<PrivacyPolicyPage />} />
             <Route path="/best-hotels" element={<BestHotelsPage />} />
+            <Route path="/best-hotels/:slug" element={<HotelDetailPage />} />
             <Route path="/local-exp" element={<LocalExpPage />} />
             <Route path="/local-exp/:slug" element={<LocalExpDetailPage />} />
           </Routes>
