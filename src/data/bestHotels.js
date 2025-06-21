@@ -1,8 +1,8 @@
 export const bestHotels = [
   {
     slug: 'la-mamounia-marrakech',
-    title: 'La Mamounia, Marrakech',
-    description: 'Iconic luxury hotel famed for its lush gardens and opulent decor.',
+    title: 'Tanger-Hilton Al Houara Resort & Spa',
+    description: 'Overlooking the ocean within 60 acres of protected forest',
     details: 'Situated near the old city walls, La Mamounia offers an oasis of calm with world-class amenities and traditional Moroccan charm.',
     image: 'https://source.unsplash.com/featured/?marrakech,hotel'
   },
