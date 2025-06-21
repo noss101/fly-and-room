@@ -16,7 +16,11 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
           <Link to="/" className="flex items-center hover:no-underline">
-  <img src="/logos/mainlogo.png" alt="Fly and Room Logo" className="h-10 mr-3" />
+  <img
+    src="/logos/newlogoo.png"
+    alt="Fly and Room Logo"
+    className="h-10 sm:h-12 md:h-14 w-auto mr-3"
+  />
   <span className="text-xl font-bold hover:no-underline">
     <span className="text-primary">Fly</span>{' '}
     and{' '}
