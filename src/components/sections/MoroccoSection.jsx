@@ -68,27 +68,29 @@ const MoroccoSection = () => {
           Browse all of our travel services in a single place and start planning your adventure today.
         </p>
         <ServicesSection />
-        <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mt-8 mb-4">Our Partners</h3>
+      </div>
+      <div className="bg-[#272724] shadow-2xl p-8 text-center text-white w-screen relative left-1/2 right-1/2 ml-[-50vw] mr-[-50vw]">
+        <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4">Our Partners</h3>
         <div className="flex justify-center items-center space-x-6">
           <img
             src="/icons/esimparicon.png"
             alt="eSIM partner"
-            className="h-8 sm:h-10 md:h-12 w-auto"
+            className="h-12 sm:h-14 md:h-16 w-auto"
           />
           <img
             src="/icons/localrenticonpar.png"
             alt="LocalRent partner"
-            className="h-8 sm:h-10 md:h-12 w-auto"
+            className="h-12 sm:h-14 md:h-16 w-auto"
           />
           <img
             src="/icons/pickupsparicon.png"
             alt="Pickups partner"
-            className="h-8 sm:h-10 md:h-12 w-auto"
+            className="h-12 sm:h-14 md:h-16 w-auto"
           />
           <img
             src="/icons/tripiconpar.png"
             alt="Trip partner"
-            className="h-8 sm:h-10 md:h-12 w-auto"
+            className="h-12 sm:h-14 md:h-16 w-auto"
           />
         </div>
       </div>
