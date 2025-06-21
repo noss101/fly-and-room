@@ -1,6 +1,7 @@
 import React from 'react';
 import BookingWidget from '../components/booking/BookingWidget';
 import MoroccoSection from '../components/sections/MoroccoSection';
+import PartnersSection from '../components/sections/PartnersSection';
 
 const HomePage = () => {
   return (
@@ -9,6 +10,7 @@ const HomePage = () => {
         <BookingWidget />
       </div>
       <MoroccoSection />
+      <PartnersSection />
     </div>
   );
 };
