@@ -25,7 +25,10 @@ const BookingWidget = () => {
       className="bg-white rounded-2xl shadow-2xl p-6 w-full max-w-4xl mx-auto"
     >
       <div className="mb-6 text-center">
-        <p className="kapakana-450" style={{ color: '#272724' }}>
+        <p
+          className="kapakana-600 font-bold text-2xl sm:text-3xl md:text-4xl"
+          style={{ color: '#272724' }}
+        >
           All in One Place for Your Next Journey.
         </p>
       </div>
