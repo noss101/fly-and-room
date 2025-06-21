@@ -98,11 +98,21 @@ const BookingWidget = () => {
         </button>
       </div>
       <div className="widget-container min-h-[300px]">
-        {activeWidget === 'hotel-flight' && <HotelFlightWidget />}
-        {activeWidget === 'car-rental' && <CarRentalWidget />}
-        {activeWidget === 'trips' && <TripsWidget />}
-        {activeWidget === 'pickups' && <PickupsWidget />}
-        {activeWidget === 'esim' && <EsimWidget />}
+        <div className={activeWidget === 'hotel-flight' ? '' : 'hidden'}>
+          <HotelFlightWidget />
+        </div>
+        <div className={activeWidget === 'car-rental' ? '' : 'hidden'}>
+          <CarRentalWidget />
+        </div>
+        <div className={activeWidget === 'trips' ? '' : 'hidden'}>
+          <TripsWidget />
+        </div>
+        <div className={activeWidget === 'pickups' ? '' : 'hidden'}>
+          <PickupsWidget />
+        </div>
+        <div className={activeWidget === 'esim' ? '' : 'hidden'}>
+          <EsimWidget />
+        </div>
       </div>
     </div>
   );
