@@ -1,51 +1,96 @@
+import React from 'react'
+
 export const bestHotels = [
   {
     slug: 'tanger-hilton-al-houara-resort-spa',
     title: 'Tanger-Hilton Al Houara Resort & Spa',
     description:
       'Beachfront luxury resort 15 minutes from Tangier Airport, set in a protected national park.',
-    details: `Hilton Al Houara Resort & Spa – All-In-One Luxury Near Tangier
-
-Located just 15 minutes from Tangier Ibn Battouta Airport, Hilton Al Houara Resort & Spa is a 5-star beachfront resort offering a perfect mix of comfort, Moroccan culture, and nature. Set in a 25-hectare protected national park with direct beach access, this resort is ideal for couples, families, and solo travelers.
-
-Top Reasons to Stay
-- Only 15 minutes from Tangier Airport
-- 2 hours from Casablanca via high-speed train
-- Quiet, peaceful location outside city noise
-- Direct access to a 5-kilometer beach
-- Surrounded by lush protected landscapes
-
-Hotel Highlights
-- 304 modern rooms, including 18 luxury suites
-- 50 fully equipped apartments for families
-- 3 swimming pools (heated, kids, oceanfront)
-- 850m² Eforea Spa with jacuzzi, sauna & fitness center
-- 5 on-site restaurants offering international & Moroccan cuisine
-
-Dining Options
-- Argan: All-day international buffet
-- Tucano: Poolside tapas & DJ entertainment
-- L’Olivier: Mediterranean fine dining experience
-- Rose Bar: Lobby cocktails & light bites
-- Cig’Art Lounge: Premium cigars and spirits
-
-Wellness & Relaxation
-The resort’s Eforea Spa is designed for total relaxation with modern therapy rooms, hammams, and 24-hour fitness access. A beauty salon and wellness treatments offer guests a complete pampering experience.
-
-Nearby Attractions
-- Historic Tangier Medina
-- Cap Spartel & Hercules Caves
-- Asilah coastal village
-- Local markets and Moroccan cafés
-
-Upcoming Features
-- 18-hole golf course under development
-- 9-hole pitch & putt golf academy with lighting
-
-Final Thoughts
-Hilton Al Houara Resort & Spa is more than a destination – it’s a full Moroccan escape. With premium rooms, delicious dining, world-class amenities, and nearby cultural gems, your stay will be unforgettable.
-
-Book at Hilton Al Houara: https://www3.hilton.com/en/hotels/morocco/hilton-tangier-al-houara-resort-and-spa-TNGAHHI/index.html`,
+    details: (
+      <>
+        <p>
+          <strong>Hilton Al Houara Resort &amp; Spa – All-In-One Luxury Near Tangier</strong>
+        </p>
+        <p>
+          Located just 15 minutes from Tangier Ibn Battouta Airport, Hilton Al
+          Houara Resort &amp; Spa is a 5-star beachfront resort offering a
+          perfect mix of comfort, Moroccan culture, and nature. Set in a
+          25-hectare protected national park with direct beach access, this
+          resort is ideal for couples, families, and solo travelers.
+        </p>
+        <p>
+          <strong>Top Reasons to Stay</strong>
+        </p>
+        <ul className="list-disc pl-5">
+          <li>Only 15 minutes from Tangier Airport</li>
+          <li>2 hours from Casablanca via high-speed train</li>
+          <li>Quiet, peaceful location outside city noise</li>
+          <li>Direct access to a 5-kilometer beach</li>
+          <li>Surrounded by lush protected landscapes</li>
+        </ul>
+        <p>
+          <strong>Hotel Highlights</strong>
+        </p>
+        <ul className="list-disc pl-5">
+          <li>304 modern rooms, including 18 luxury suites</li>
+          <li>50 fully equipped apartments for families</li>
+          <li>3 swimming pools (heated, kids, oceanfront)</li>
+          <li>850m² Eforea Spa with jacuzzi, sauna &amp; fitness center</li>
+          <li>5 on-site restaurants offering international &amp; Moroccan cuisine</li>
+        </ul>
+        <p>
+          <strong>Dining Options</strong>
+        </p>
+        <ul className="list-disc pl-5">
+          <li>Argan: All-day international buffet</li>
+          <li>Tucano: Poolside tapas &amp; DJ entertainment</li>
+          <li>L’Olivier: Mediterranean fine dining experience</li>
+          <li>Rose Bar: Lobby cocktails &amp; light bites</li>
+          <li>Cig’Art Lounge: Premium cigars and spirits</li>
+        </ul>
+        <p>
+          <strong>Wellness &amp; Relaxation</strong>
+        </p>
+        <p>
+          The resort’s Eforea Spa is designed for total relaxation with modern
+          therapy rooms, hammams, and 24-hour fitness access. A beauty salon and
+          wellness treatments offer guests a complete pampering experience.
+        </p>
+        <p>
+          <strong>Nearby Attractions</strong>
+        </p>
+        <ul className="list-disc pl-5">
+          <li>Historic Tangier Medina</li>
+          <li>Cap Spartel &amp; Hercules Caves</li>
+          <li>Asilah coastal village</li>
+          <li>Local markets and Moroccan cafés</li>
+        </ul>
+        <p>
+          <strong>Upcoming Features</strong>
+        </p>
+        <ul className="list-disc pl-5">
+          <li>18-hole golf course under development</li>
+          <li>9-hole pitch &amp; putt golf academy with lighting</li>
+        </ul>
+        <p>
+          <strong>Final Thoughts</strong>
+        </p>
+        <p>
+          Hilton Al Houara Resort &amp; Spa is more than a destination – it’s a
+          full Moroccan escape. With premium rooms, delicious dining,
+          world-class amenities, and nearby cultural gems, your stay will be
+          unforgettable.
+        </p>
+        <p>
+          <a
+            href="https://www3.hilton.com/en/hotels/morocco/hilton-tangier-al-houara-resort-and-spa-TNGAHHI/index.html"
+            className="text-primary underline"
+          >
+            Book at Hilton Al Houara
+          </a>
+        </p>
+      </>
+    ),
     image: '/images/tanger_hiltonalhouara.jpg',
     images: [
       '/images/tanger_hiltonalhouara_1.jpg',
