@@ -1,7 +1,11 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 
 const TripsWidget = () => {
+  const loaded = useRef(false);
+
   useEffect(() => {
+    if (loaded.current) return;
+
     const container = document.getElementById('trips-widget-container');
     if (!container) return;
 
@@ -12,10 +16,7 @@ const TripsWidget = () => {
     script.charset = 'utf-8';
 
     container.appendChild(script);
-
-    return () => {
-      container.innerHTML = '';
-    };
+    loaded.current = true;
   }, []);
 
   return <div id="trips-widget-container" className="w-full shadow-lg"></div>;
