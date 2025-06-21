@@ -19,7 +19,7 @@ const HotelDetailPage = () => {
       <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-[#272724]">
         {hotel.title}
       </h1>
-      <p className="text-gray-700 mb-8">{hotel.details}</p>
+      <p className="text-gray-700 mb-8 whitespace-pre-line">{hotel.details}</p>
       <Link to="/best-hotels" className="text-primary font-semibold hover:underline">
         &larr; Back to hotels
       </Link>
