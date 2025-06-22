@@ -91,6 +91,16 @@ export const bestHotels = [
             Book at Hilton Al Houara
           </a>
         </p>
+          <div className="mt-8">
+            <iframe
+              title="Hilton Al Houara Resort & Spa Map"
+              src="https://www.google.com/maps?q=M28M%2BXM%20Tangier&output=embed"
+              width="100%"
+              height="300"
+              className="w-full rounded-lg"
+              allowFullScreen
+            ></iframe>
+          </div>
       </>
     ),
     image: '/images/tanger_hiltonalhouara.jpg',
