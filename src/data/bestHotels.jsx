@@ -216,11 +216,17 @@ export const bestHotels = [
           business and leisure travelers.
         </p>
 
-        <h2 className="text-2xl font-semibold mt-6 mb-2">🌟 Why Guests Love It</h2>
+        <h2 className="text-2xl font-semibold mt-6 mb-2">
+          <span style={{ color: '#272724' }}>🌟</span> Why Guests Love It
+        </h2>
         <ul className="list-disc list-inside mb-4">
-          <li>📍 Prime location in Rabat’s Agdal neighborhood</li>
           <li>
-            🏛 Close to major attractions:
+            <span style={{ color: '#272724' }}>📍</span> Prime location in Rabat’s
+            Agdal neighborhood
+          </li>
+          <li>
+            <span style={{ color: '#272724' }}>🏛</span> Close to major
+            attractions:
             <ul className="list-disc list-inside ml-6">
               <li>National Library of Morocco (1.9 km)</li>
               <li>Hassan Tower (4.3 km)</li>
@@ -228,28 +234,71 @@ export const bestHotels = [
               <li>Rabat Beach (4.5 km)</li>
             </ul>
           </li>
-          <li>☕️ Surrounded by cafés: Café Atlantique, Liliane, Café Zuma</li>
-          <li>✈️ 12 km from Rabat-Salé Airport, with shuttle service available</li>
+          <li>
+            <span style={{ color: '#272724' }}>☕️</span> Surrounded by cafés: Café
+            Atlantique, Liliane, Café Zuma
+          </li>
+          <li>
+            <span style={{ color: '#272724' }}>✈️</span> 12 km from Rabat-Salé
+            Airport, with shuttle service available
+          </li>
         </ul>
 
-        <h2 className="text-2xl font-semibold mt-6 mb-2">🏨 Room Features</h2>
+        <h2 className="text-2xl font-semibold mt-6 mb-2">
+          <span style={{ color: '#272724' }}>🏨</span> Room Features
+        </h2>
         <ul className="list-disc list-inside mb-4">
-          <li>❄️ Air conditioning</li>
-          <li>🚿 Private bathroom with shower or bathtub</li>
-          <li>📺 Flat-screen TV (cable, satellite, streaming services)</li>
-          <li>☕️ Coffee machine and electric kettle</li>
-          <li>🍳 Some units with kitchen (fridge, microwave, stovetop)</li>
-          <li>👨‍👩‍👧 Family rooms available</li>
-          <li>🚭 Non-smoking rooms</li>
+          <li>
+            <span style={{ color: '#272724' }}>❄️</span> Air conditioning
+          </li>
+          <li>
+            <span style={{ color: '#272724' }}>🚿</span> Private bathroom with
+            shower or bathtub
+          </li>
+          <li>
+            <span style={{ color: '#272724' }}>📺</span> Flat-screen TV (cable,
+            satellite, streaming services)
+          </li>
+          <li>
+            <span style={{ color: '#272724' }}>☕️</span> Coffee machine and
+            electric kettle
+          </li>
+          <li>
+            <span style={{ color: '#272724' }}>🍳</span> Some units with kitchen
+            (fridge, microwave, stovetop)
+          </li>
+          <li>
+            <span style={{ color: '#272724' }}>👨‍👩‍👧</span> Family rooms available
+          </li>
+          <li>
+            <span style={{ color: '#272724' }}>🚭</span> Non-smoking rooms
+          </li>
         </ul>
 
-        <h2 className="text-2xl font-semibold mt-6 mb-2">🚗 Transport & Services</h2>
+        <h2 className="text-2xl font-semibold mt-6 mb-2">
+          <span style={{ color: '#272724' }}>🚗</span> Transport &amp; Services
+        </h2>
         <ul className="list-disc list-inside mb-4">
-          <li>🚆 Near Rabat Agdal (1.6 km) and Rabat Ville (2.8 km) stations</li>
-          <li>🚌 Airport shuttle (extra charge)</li>
-          <li>🛎 Concierge, express check-in/out</li>
-          <li>🔒 In-room safe, 24/7 security</li>
-          <li>📶 Free Wi-Fi throughout the property</li>
+          <li>
+            <span style={{ color: '#272724' }}>🚆</span> Near Rabat Agdal (1.6 km)
+            and Rabat Ville (2.8 km) stations
+          </li>
+          <li>
+            <span style={{ color: '#272724' }}>🚌</span> Airport shuttle (extra
+            charge)
+          </li>
+          <li>
+            <span style={{ color: '#272724' }}>🛎</span> Concierge, express
+            check-in/out
+          </li>
+          <li>
+            <span style={{ color: '#272724' }}>🔒</span> In-room safe, 24/7
+            security
+          </li>
+          <li>
+            <span style={{ color: '#272724' }}>📶</span> Free Wi-Fi throughout the
+            property
+          </li>
         </ul>
 
         <p className="mb-6">
