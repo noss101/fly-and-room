@@ -374,7 +374,16 @@ export const bestHotels = [
         </a>
       </section>
     ),
-    image: '/images/stayhere.jpg'
+    image: '/images/stayhere.jpg',
+    images: [
+      '/images/stay here5.jpg',
+      '/images/stayhere1.jpg',
+      '/images/stayhere2.jpg',
+      '/images/stayhere3.jpg',
+      '/images/stayhere4.jpg',
+      '/images/stayhere6.jpg',
+      '/images/stayhere7.jpg'
+    ]
   },
   {
     slug: 'sofitel-casablanca',
