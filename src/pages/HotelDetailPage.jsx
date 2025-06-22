@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { bestHotels } from '../data/bestHotels.jsx';
 
 const HotelDetailPage = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
   const { slug } = useParams();
   const hotel = bestHotels.find((h) => h.slug === slug);
 
@@ -20,17 +21,32 @@ const HotelDetailPage = () => {
         {hotel.title}
       </h1>
       {hotel.images && (
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-8">
-          {hotel.images.map((src, idx) => (
-            <div key={idx} className="rounded-lg overflow-hidden shadow">
-              <img
-                src={src}
-                alt={`${hotel.title} ${idx + 1}`}
-                className="w-full h-40 object-cover"
-              />
+        <>
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-8">
+            {hotel.images.map((src, idx) => (
+              <button
+                key={idx}
+                type="button"
+                onClick={() => setSelectedImage(src)}
+                className="rounded-lg overflow-hidden shadow focus:outline-none"
+              >
+                <img
+                  src={src}
+                  alt={`${hotel.title} ${idx + 1}`}
+                  className="w-full h-40 object-cover cursor-pointer"
+                />
+              </button>
+            ))}
+          </div>
+          {selectedImage && (
+            <div
+              className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75"
+              onClick={() => setSelectedImage(null)}
+            >
+              <img src={selectedImage} alt="Selected" className="max-h-full max-w-full" />
             </div>
-          ))}
-        </div>
+          )}
+        </>
       )}
       {typeof hotel.details === 'string' ? (
         <p className="text-gray-700 mb-8 whitespace-pre-line">{hotel.details}</p>
@@ -45,3 +61,4 @@ const HotelDetailPage = () => {
 };
 
 export default HotelDetailPage;
+
