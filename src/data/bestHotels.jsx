@@ -199,11 +199,76 @@ export const bestHotels = [
     ]
   },
   {
-    slug: 'four-seasons-marrakech',
-    title: 'Four Seasons Resort Marrakech',
-    description: 'Contemporary resort with sprawling pools and tranquil gardens.',
-    details: 'This resort provides easy access to the medina while delivering renowned Four Seasons luxury and relaxation.',
-    image: 'https://source.unsplash.com/featured/?resort,marrakech'
+    slug: 'stayhere-rabat-agdal-4-hotel',
+    title: 'Stayhere Rabat - Agdal 4 Hotel',
+    description:
+      "Modern comfort in Rabat's Agdal district with stylish rooms and free Wi-Fi.",
+    details: (
+      <section className="max-w-4xl mx-auto p-6">
+        <h1 className="text-3xl font-bold mb-4">
+          Stayhere Rabat - Agdal 4 Hotel — Your Comfortable Urban Retreat
+        </h1>
+        <p className="mb-4">
+          Stay at <strong>Stayhere Rabat - Agdal 4 Hotel</strong> for modern
+          comfort in the heart of Rabat's Agdal district. Located just 1.9 km
+          from the National Library of the Kingdom of Morocco, this hotel offers
+          stylish rooms with air conditioning and free Wi-Fi — ideal for both
+          business and leisure travelers.
+        </p>
+
+        <h2 className="text-2xl font-semibold mt-6 mb-2">🌟 Why Guests Love It</h2>
+        <ul className="list-disc list-inside mb-4">
+          <li>📍 Prime location in Rabat’s Agdal neighborhood</li>
+          <li>
+            🏛 Close to major attractions:
+            <ul className="list-disc list-inside ml-6">
+              <li>National Library of Morocco (1.9 km)</li>
+              <li>Hassan Tower (4.3 km)</li>
+              <li>Kasbah of the Udayas (4.5 km)</li>
+              <li>Rabat Beach (4.5 km)</li>
+            </ul>
+          </li>
+          <li>☕️ Surrounded by cafés: Café Atlantique, Liliane, Café Zuma</li>
+          <li>✈️ 12 km from Rabat-Salé Airport, with shuttle service available</li>
+        </ul>
+
+        <h2 className="text-2xl font-semibold mt-6 mb-2">🏨 Room Features</h2>
+        <ul className="list-disc list-inside mb-4">
+          <li>❄️ Air conditioning</li>
+          <li>🚿 Private bathroom with shower or bathtub</li>
+          <li>📺 Flat-screen TV (cable, satellite, streaming services)</li>
+          <li>☕️ Coffee machine and electric kettle</li>
+          <li>🍳 Some units with kitchen (fridge, microwave, stovetop)</li>
+          <li>👨‍👩‍👧 Family rooms available</li>
+          <li>🚭 Non-smoking rooms</li>
+        </ul>
+
+        <h2 className="text-2xl font-semibold mt-6 mb-2">🚗 Transport & Services</h2>
+        <ul className="list-disc list-inside mb-4">
+          <li>🚆 Near Rabat Agdal (1.6 km) and Rabat Ville (2.8 km) stations</li>
+          <li>🚌 Airport shuttle (extra charge)</li>
+          <li>🛎 Concierge, express check-in/out</li>
+          <li>🔒 In-room safe, 24/7 security</li>
+          <li>📶 Free Wi-Fi throughout the property</li>
+        </ul>
+
+        <p className="mb-6">
+          Whether you're visiting Rabat for work, family, or adventure,{' '}
+          <strong>Stayhere Rabat - Agdal 4 Hotel</strong> offers a modern,
+          convenient base to explore the city.
+        </p>
+
+        <a
+          href="https://www.booking.com/Share-g32DqBt"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition"
+        >
+          Check Availability &amp; Book Now
+        </a>
+      </section>
+    ),
+    image: '/images/stayhere.jpg'
   },
   {
     slug: 'sofitel-casablanca',
