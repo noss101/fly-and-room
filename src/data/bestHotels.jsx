@@ -177,7 +177,12 @@ export const bestHotels = [
             Whether you’re here to unwind, explore, or both — <strong>AG Hôtel &amp; Spa Marrakech</strong> promises to make your visit truly unforgettable.
           </p>
           <p>
-            <a href="#" className="inline-block bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition">
+            <a
+              href="https://www.booking.com/Share-tI5xQa9"
+              className="inline-block bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Book Your Stay at AG Hôtel &amp; Spa
             </a>
           </p>
