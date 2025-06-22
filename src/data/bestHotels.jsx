@@ -85,6 +85,8 @@ export const bestHotels = [
           <a
             href="https://www3.hilton.com/en/hotels/morocco/hilton-tangier-al-houara-resort-and-spa-TNGAHHI/index.html"
             className="text-primary underline"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Book at Hilton Al Houara
           </a>
