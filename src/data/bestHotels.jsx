@@ -397,11 +397,112 @@ export const bestHotels = [
     ]
   },
   {
-    slug: 'sofitel-casablanca',
-    title: 'Sofitel Casablanca Tour Blanche',
-    description: 'Sophisticated hotel in the heart of Casablanca\'s business district.',
-    details: 'Enjoy panoramic city views and French-inspired elegance a short walk from the historic medina.',
-    image: 'https://source.unsplash.com/featured/?casablanca,hotel'
+    slug: 'fes-marriott-hotel-jnan-palace',
+    title: 'Fes Marriott Hotel Jnan Palace',
+    description:
+      'Luxury hotel with gardens, pool, spa, and easy access to Fez attractions.',
+    details: (
+      <section className="max-w-4xl mx-auto p-6">
+        <h1 className="text-3xl font-bold mb-4">
+          Fes Marriott Hotel Jnan Palace — Luxury in the Heart of Fez
+        </h1>
+        <p className="mb-4">
+          Discover comfort and elegance at{' '}
+          <strong>Fes Marriott Hotel Jnan Palace</strong>, located in Fez’s
+          vibrant new quarter. This 5-star property features air-conditioned
+          rooms, lush gardens, and top-tier amenities including an outdoor
+          pool, gym, and spa.
+        </p>
+
+        <h2 className="text-2xl font-semibold mt-6 mb-2">
+          <span style={{ color: '#272724' }}>🌟</span> Why Stay Here?
+        </h2>
+        <ul className="list-disc list-inside mb-4">
+          <li>
+            <span style={{ color: '#272724' }}>📍</span> Central location,
+            close to:
+            <ul className="list-disc list-inside ml-6">
+              <li>Royal Palace of Fez (2.8 km)</li>
+              <li>Bab Bou Jeloud (4.2 km)</li>
+              <li>Medersa Bouanania (4.4 km)</li>
+              <li>Karaouiyne Mosque (5 km)</li>
+            </ul>
+          </li>
+          <li>
+            <span style={{ color: '#272724' }}>🏖</span> Outdoor swimming pool
+            with sun loungers &amp; pool bar
+          </li>
+          <li>
+            <span style={{ color: '#272724' }}>🍽</span> 6 restaurants serving
+            Moroccan &amp; international cuisine
+          </li>
+          <li>
+            <span style={{ color: '#272724' }}>🚗</span> Free private parking
+            on-site
+          </li>
+          <li>
+            <span style={{ color: '#272724' }}>✈️</span> Airport shuttle
+            available (13 km to Fez Sais Airport)
+          </li>
+        </ul>
+
+        <h2 className="text-2xl font-semibold mt-6 mb-2">
+          <span style={{ color: '#272724' }}>🏨</span> Room &amp; Facility
+          Highlights
+        </h2>
+        <ul className="list-disc list-inside mb-4">
+          <li>
+            <span style={{ color: '#272724' }}>❄️</span> Air-conditioned rooms
+            with balconies
+          </li>
+          <li>
+            <span style={{ color: '#272724' }}>🌳</span> Views of the gardens or
+            pool
+          </li>
+          <li>
+            <span style={{ color: '#272724' }}>📺</span> Flat-screen TV, free
+            Wi-Fi, lift access
+          </li>
+          <li>
+            <span style={{ color: '#272724' }}>🛁</span> En-suite bathrooms with
+            free toiletries
+          </li>
+          <li>
+            <span style={{ color: '#272724' }}>🏋️</span> Modern fitness center
+            &amp; spa
+          </li>
+          <li>
+            <span style={{ color: '#272724' }}>📚</span> Library &amp; relaxation
+            lounge
+          </li>
+        </ul>
+
+        <h2 className="text-2xl font-semibold mt-6 mb-2">
+          <span style={{ color: '#272724' }}>🎶</span> Extra Experiences
+        </h2>
+        <ul className="list-disc list-inside mb-4">
+          <li>💆 Spa with sauna, massages, and wellness treatments</li>
+          <li>🎤 Live music, cultural tours, and themed dinners</li>
+          <li>🚲 Bike rentals and nearby golf (Royal Golf de Fez)</li>
+        </ul>
+
+        <p className="mb-6">
+          Whether you’re visiting Fez for business or leisure,{' '}
+          <strong>Fes Marriott Hotel Jnan Palace</strong> promises a luxurious
+          stay with Moroccan hospitality at its finest.
+        </p>
+
+        <a
+          href="https://www.booking.com/Share-g32DqBt"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition"
+        >
+          Check Availability &amp; Book Now
+        </a>
+      </section>
+    ),
+    image: '/images/fes.jpg'
   },
   {
     slug: 'riad-fes',
