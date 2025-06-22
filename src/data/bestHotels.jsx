@@ -372,6 +372,17 @@ export const bestHotels = [
         >
           Check Availability &amp; Book Now
         </a>
+
+        <div className="mt-8">
+          <iframe
+            title="Stayhere Rabat - Agdal 4 Hotel Map"
+            src="https://www.google.com/maps?q=X5W2%2BQW%20Rabat&output=embed"
+            width="100%"
+            height="300"
+            className="w-full rounded-lg"
+            allowFullScreen
+          ></iframe>
+        </div>
       </section>
     ),
     image: '/images/stayhere.jpg',
