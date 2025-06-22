@@ -121,15 +121,77 @@ export const bestHotels = [
     slug: 'royal-mansour-marrakech',
     title: 'AG Hotel & Spa Marrakech',
     description: 'Palatial retreat featuring private riads and exceptional service.',
-    details: 'Owned by the Moroccan royal family, Royal Mansour showcases exquisite craftsmanship and unparalleled luxury.',
-    image: '/images/aghotel.jpg'
-  },
-  {
-    slug: 'kasbah-tamadot',
-    title: 'Kasbah Tamadot',
-    description: 'Hidden gem in the Atlas Mountains offering breathtaking views.',
-    details: 'Part of Richard Branson\'s collection, Kasbah Tamadot blends Berber hospitality with boutique comfort.',
-    image: 'https://source.unsplash.com/featured/?atlas,mountains,hotel'
+    details: (
+      <>
+        <div className="max-w-4xl mx-auto p-6">
+          <p>
+            <strong>AG Hôtel &amp; Spa Marrakech – Where Elegance Meets Comfort</strong>
+          </p>
+          <p>
+            Welcome to <strong>AG Hôtel &amp; Spa Marrakech</strong>, where luxury and relaxation come together to create a truly memorable stay. More than just a place to sleep, AG Hôtel offers an experience designed for both leisure and business travelers, with personalized service at every turn.
+          </p>
+          <p>
+            <strong>Why Choose AG Hôtel &amp; Spa Marrakech?</strong>
+          </p>
+          <ul className="list-disc pl-5">
+            <li>Located at the gateway to Marrakech’s historic medina</li>
+            <li>Elegant blend of contemporary design and Moroccan charm</li>
+            <li>Warm, attentive service focused on guest satisfaction</li>
+            <li>Peaceful atmosphere with garden and mountain views</li>
+          </ul>
+          <p>
+            <strong>Rooms &amp; Suites: Your Ideal Refuge</strong>
+          </p>
+          <ul className="list-disc pl-5">
+            <li>Spacious, light-filled rooms and suites</li>
+            <li>Contemporary décor with Moroccan touches</li>
+            <li>Modern technology and comforts</li>
+            <li>Beautiful views of lush gardens or distant mountains</li>
+          </ul>
+          <p>
+            <strong>Culinary Excellence</strong>
+          </p>
+          <p>
+            Enjoy a culinary journey where <strong>Moroccan tradition</strong> meets <strong>international creativity</strong>. Dishes are crafted with seasonal ingredients and served with elegance in the hotel’s fine dining spaces.
+          </p>
+          <p>
+            <strong>Spa &amp; Wellness: Relax, Recharge, Rejuvenate</strong>
+          </p>
+          <ul className="list-disc pl-5">
+            <li><strong>Spa &amp; sauna:</strong> Detox, improve circulation, and achieve deep relaxation</li>
+            <li><strong>Custom massages:</strong> Tailored treatments using natural essential oils</li>
+            <li><strong>Fitness center:</strong> State-of-the-art gym with personal trainers</li>
+            <li><strong>Group classes:</strong> Stay active and inspired during your stay</li>
+          </ul>
+          <p>
+            <strong>Nearby Highlights</strong>
+          </p>
+          <ul className="list-disc pl-5 mb-6">
+            <li>Marrakech Medina</li>
+            <li>Koutoubia Mosque</li>
+            <li>Majorelle Garden</li>
+            <li>Jemaa el-Fnaa square</li>
+            <li>Saadian Tombs</li>
+          </ul>
+          <p>
+            Whether you’re here to unwind, explore, or both — <strong>AG Hôtel &amp; Spa Marrakech</strong> promises to make your visit truly unforgettable.
+          </p>
+          <p>
+            <a href="#" className="inline-block bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition">
+              Book Your Stay at AG Hôtel &amp; Spa
+            </a>
+          </p>
+        </div>
+      </>
+    ),
+    image: '/images/aghotel.jpg',
+    images: [
+      '/images/ag hotel3.jpg',
+      '/images/aghotel2.jpg',
+      '/images/aghotel2.jpg',
+      '/images/aghotel4.jpg',
+      '/images/aghotel5.jpg'
+    ]
   },
   {
     slug: 'four-seasons-marrakech',
