@@ -119,10 +119,10 @@ export const bestHotels = [
   },
   {
     slug: 'royal-mansour-marrakech',
-    title: 'Royal Mansour Marrakech',
+    title: 'AG Hotel & Spa Marrakech',
     description: 'Palatial retreat featuring private riads and exceptional service.',
     details: 'Owned by the Moroccan royal family, Royal Mansour showcases exquisite craftsmanship and unparalleled luxury.',
-    image: 'https://source.unsplash.com/featured/?luxury,hotel'
+    image: '/images/aghotel.jpg'
   },
   {
     slug: 'kasbah-tamadot',
