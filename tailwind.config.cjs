@@ -22,6 +22,7 @@ module.exports = {
       },
       animation: {
         'slide-left': 'slide-left 1s ease-in-out',
+        'slide-left-slow': 'slide-left 5s ease-in-out',
         marquee: 'marquee 30s linear infinite',
       },
     },
