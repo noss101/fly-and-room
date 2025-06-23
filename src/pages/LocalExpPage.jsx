@@ -22,7 +22,7 @@ const LocalExpPage = () => {
           <Link
             key={index}
             to={`/local-exp/${exp.slug}`}
-            className="bg-white rounded-xl overflow-hidden shadow-lg transition-transform hover:scale-[1.02]"
+            className="bg-white rounded-xl overflow-hidden shadow-2xl transition-transform hover:scale-[1.02]"
           >
             <img
               src={exp.image ? exp.image : `/localexp/${exp.slug}.svg`}
