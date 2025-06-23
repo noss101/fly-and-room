@@ -1,29 +1,30 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { localExperiences } from '../../data/localExperiences';
+import { bestHotels } from '../../data/bestHotels.jsx';
+import HotelCard from '../HotelCard.jsx';
 import ServicesSection from './ServicesSection';
 
 const MoroccoSection = () => {
   const previewExperiences = localExperiences.slice(0, 3);
+  const previewHotels = bestHotels.slice(0, 3);
   return (
     <section className="py-16">
       <div className="container mx-auto px-4 space-y-8">
         <div className="bg-[#272724] shadow-2xl p-8 text-center text-white w-screen relative left-1/2 right-1/2 ml-[-50vw] mr-[-50vw]">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-center">
-            Find Cheap Flights and Hotels in{' '}
-            <span className="inline-flex items-center">
-              Morocco
-              <img src="/icons/moroccoflag.png" alt="Morocco flag" className="w-6 h-6 ml-2 inline-block" />
-            </span>
+            Exclusive <span className="text-primary">Hotels</span>
           </h2>
-          <p className="text-xl max-w-3xl mx-auto text-gray-300">
-            Explore Morocco with great deals on flights and accommodations. Search for affordable travel options and compare prices on top hotels in Marrakech, Casablanca, and beyond.
-          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+            {previewHotels.map((hotel, index) => (
+              <HotelCard key={index} hotel={hotel} animation="animate-slide-left" />
+            ))}
+          </div>
           <Link
-            to="/services"
+            to="/best-hotels"
             className="inline-block mt-4 px-6 py-3 bg-primary text-white rounded-lg shadow hover:bg-primary/90"
           >
-            Our Services
+            Find More
           </Link>
         </div>
         <div className="bg-white/70 backdrop-blur-md rounded-3xl shadow-2xl p-8 text-center">

@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { bestHotels } from '../data/bestHotels.jsx';
+import HotelCard from '../components/HotelCard.jsx';
 
 const BestHotelsPage = () => {
   const hotels = bestHotels;
@@ -18,22 +18,7 @@ const BestHotelsPage = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {hotels.map((hotel, index) => (
-          <Link
-            key={index}
-            to={`/best-hotels/${hotel.slug}`}
-            className="bg-white rounded-xl overflow-hidden shadow-lg transition-transform hover:scale-[1.02]"
-          >
-            <img
-              src={hotel.image}
-              alt={hotel.title}
-              className="h-48 w-full object-cover"
-            />
-            <div className="p-6">
-              <h3 className="text-xl font-bold mb-2">{hotel.title}</h3>
-              <p className="text-gray-600 mb-4">{hotel.description}</p>
-              <span className="text-primary font-semibold hover:underline">Discover Hotel</span>
-            </div>
-          </Link>
+          <HotelCard key={index} hotel={hotel} />
         ))}
       </div>
     </div>
