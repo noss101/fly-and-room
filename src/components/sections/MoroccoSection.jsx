@@ -17,7 +17,11 @@ const MoroccoSection = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
             {previewHotels.map((hotel, index) => (
-              <HotelCard key={index} hotel={hotel} animation="animate-slide-left" />
+              <HotelCard
+                key={index}
+                hotel={hotel}
+                animation="animate-slide-left-slow"
+              />
             ))}
           </div>
           <Link
