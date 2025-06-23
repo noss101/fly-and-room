@@ -16,28 +16,63 @@ export const localExperiences = [
         </p>
 
         <h3 className="text-xl font-semibold mb-2">Top Places to Visit</h3>
-        <ul className="list-disc list-inside mb-3">
-          <li>
-            <strong>Jemaa el-Fnaa:</strong> The heart of Marrakech, known for its
-            street performers, food stalls, and local crafts.
-          </li>
-          <li>
-            <strong>Koutoubia Mosque:</strong> The city's iconic landmark with a
-            beautiful minaret visible from many parts of Marrakech.
-          </li>
-          <li>
-            <strong>Bahia Palace:</strong> A stunning 19th-century palace
-            showcasing traditional Moroccan architecture and gardens.
-          </li>
-          <li>
-            <strong>Majorelle Garden:</strong> A peaceful botanical garden filled
-            with exotic plants and vibrant colors.
-          </li>
-          <li>
-            <strong>Souks of Marrakech:</strong> Explore narrow alleys lined with
-            shops selling spices, leather goods, textiles, and more.
-          </li>
-        </ul>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-3">
+          <div className="bg-white rounded-lg shadow p-4">
+            <p>
+              <strong>Jemaa el-Fnaa:</strong> The heart of Marrakech, known for
+              its street performers, food stalls, and local crafts.
+            </p>
+            <img
+              src="/images/Jemaa el-Fnaa.jpg"
+              alt="Jemaa el-Fnaa"
+              className="mt-2 w-full h-40 object-cover rounded"
+            />
+          </div>
+          <div className="bg-white rounded-lg shadow p-4">
+            <p>
+              <strong>Koutoubia Mosque:</strong> The city's iconic landmark with
+              a beautiful minaret visible from many parts of Marrakech.
+            </p>
+            <img
+              src="/images/Koutoubia Mosque.jpg"
+              alt="Koutoubia Mosque"
+              className="mt-2 w-full h-40 object-cover rounded"
+            />
+          </div>
+          <div className="bg-white rounded-lg shadow p-4">
+            <p>
+              <strong>Bahia Palace:</strong> A stunning 19th-century palace
+              showcasing traditional Moroccan architecture and gardens.
+            </p>
+            <img
+              src="/images/Bahia Palace.jpg"
+              alt="Bahia Palace"
+              className="mt-2 w-full h-40 object-cover rounded"
+            />
+          </div>
+          <div className="bg-white rounded-lg shadow p-4">
+            <p>
+              <strong>Majorelle Garden:</strong> A peaceful botanical garden
+              filled with exotic plants and vibrant colors.
+            </p>
+            <img
+              src="/images/Majorelle Garden.jpg"
+              alt="Majorelle Garden"
+              className="mt-2 w-full h-40 object-cover rounded"
+            />
+          </div>
+          <div className="bg-white rounded-lg shadow p-4">
+            <p>
+              <strong>Souks of Marrakech:</strong> Explore narrow alleys lined
+              with shops selling spices, leather goods, textiles, and more.
+            </p>
+            <img
+              src="/images/Souks of Marrakech.jpg"
+              alt="Souks of Marrakech"
+              className="mt-2 w-full h-40 object-cover rounded"
+            />
+          </div>
+        </div>
 
         <h3 className="text-xl font-semibold mb-2">Why Choose Marrakech</h3>
         <p className="mb-3">
