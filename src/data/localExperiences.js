@@ -1,9 +1,60 @@
 export const localExperiences = [
   {
     slug: 'marrakech-luxury-riads',
-    title: 'Marrakech Luxury Riads',
-    description: 'Experience authentic Moroccan hospitality in beautifully restored traditional houses.',
-    details: 'Stay in historic riads located in the heart of Marrakech and enjoy personalized service in a luxurious setting.',
+    title: 'Marrakech Tour and Places for Tourists',
+    description:
+      'Discover the charm of Marrakech, where tradition meets modern life. This vibrant city offers an unforgettable experience for tourists, with its lively streets, colorful souks, and historic landmarks.',
+    details: (
+      <div className="p-4 bg-white rounded shadow">
+        <h2 className="text-2xl font-bold mb-3">
+          Marrakech Tour and Places for Tourists
+        </h2>
+        <p className="mb-3">
+          Discover the charm of Marrakech, where tradition meets modern life.
+          This vibrant city offers an unforgettable experience for tourists, with
+          its lively streets, colorful souks, and historic landmarks.
+        </p>
+
+        <h3 className="text-xl font-semibold mb-2">Top Places to Visit</h3>
+        <ul className="list-disc list-inside mb-3">
+          <li>
+            <strong>Jemaa el-Fnaa:</strong> The heart of Marrakech, known for its
+            street performers, food stalls, and local crafts.
+          </li>
+          <li>
+            <strong>Koutoubia Mosque:</strong> The city's iconic landmark with a
+            beautiful minaret visible from many parts of Marrakech.
+          </li>
+          <li>
+            <strong>Bahia Palace:</strong> A stunning 19th-century palace
+            showcasing traditional Moroccan architecture and gardens.
+          </li>
+          <li>
+            <strong>Majorelle Garden:</strong> A peaceful botanical garden filled
+            with exotic plants and vibrant colors.
+          </li>
+          <li>
+            <strong>Souks of Marrakech:</strong> Explore narrow alleys lined with
+            shops selling spices, leather goods, textiles, and more.
+          </li>
+        </ul>
+
+        <h3 className="text-xl font-semibold mb-2">Why Choose Marrakech</h3>
+        <p className="mb-3">
+          Marrakech offers a mix of culture, history, and warm hospitality.
+          Whether you're wandering through ancient palaces or enjoying a mint tea
+          in a traditional café, the city promises a unique experience that
+          blends the past with the present.
+        </p>
+
+        <a
+          href="/local-experiences/marrakech-tour"
+          className="inline-block mt-2 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+        >
+          Learn More
+        </a>
+      </div>
+    ),
     image: '/images/MarrakechLuxuryRiads.jpg'
   },
   {
