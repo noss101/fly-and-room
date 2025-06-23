@@ -12,7 +12,7 @@ const MoroccoSection = () => {
   return (
     <section className="py-16">
       <div className="container mx-auto px-4 space-y-8">
-        <div className="bg-[#272724] shadow-2xl p-8 text-center text-white w-full">
+        <div className="bg-[#272724] shadow-2xl p-8 text-center text-white w-screen relative left-1/2 right-1/2 ml-[-50vw] mr-[-50vw]">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-center">
             Exclusive <span className="text-primary">Hotels</span>
           </h2>
@@ -30,7 +30,7 @@ const MoroccoSection = () => {
             Find More
           </Link>
         </div>
-        <div className="bg-white/70 backdrop-blur-md shadow-2xl p-8 text-center w-full">
+        <div className="bg-white/70 backdrop-blur-md shadow-2xl p-8 text-center w-screen relative left-1/2 right-1/2 ml-[-50vw] mr-[-50vw]">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-center">
             Places for Tourists
             <span className="inline-flex items-center">
@@ -66,7 +66,7 @@ const MoroccoSection = () => {
           Explore Local Experiences
         </Link>
       </div>
-      <div className="bg-[#272724] shadow-2xl p-8 text-center text-white w-full">
+      <div className="bg-[#272724] shadow-2xl p-8 text-center text-white w-screen relative left-1/2 right-1/2 ml-[-50vw] mr-[-50vw]">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-center">All in One</h2>
         <p className="text-xl max-w-3xl mx-auto text-gray-300 mb-6">
           Browse all of our travel services in a single place and start planning your adventure today.
