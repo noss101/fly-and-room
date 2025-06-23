@@ -499,7 +499,7 @@ export const bestHotels = [
         </p>
 
         <a
-          href="https://www.booking.com/Share-g32DqBt"
+          href="https://www.booking.com/Share-tUQ4Ij"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition"
@@ -508,7 +508,16 @@ export const bestHotels = [
         </a>
       </section>
     ),
-    image: '/images/fes.jpg'
+    image: '/images/fes.jpg',
+    images: [
+      '/images/fes1.jpg',
+      '/images/fes2.jpg',
+      '/images/fes3.jpg',
+      '/images/fes4.jpg',
+      '/images/fes5.jpg',
+      '/images/fes6.jpg',
+      '/images/fes7.jpg'
+    ]
   },
   {
     slug: 'riad-fes',
