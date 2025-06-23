@@ -22,7 +22,7 @@ export const localExperiences = [
               <strong>Jemaa el-Fnaa:</strong> The heart of Marrakech, known for
               its street performers, food stalls, and local crafts.
             </p>
-            <a href="/images/Jemaa el-Fnaa.jpg" target="_blank" rel="noopener noreferrer">
+            <a href="/images/Jemaa el-Fnaa.jpg">
               <img
                 src="/images/Jemaa el-Fnaa.jpg"
                 alt="Jemaa el-Fnaa"
@@ -35,7 +35,7 @@ export const localExperiences = [
               <strong>Koutoubia Mosque:</strong> The city's iconic landmark with
               a beautiful minaret visible from many parts of Marrakech.
             </p>
-            <a href="/images/Koutoubia Mosque.jpg" target="_blank" rel="noopener noreferrer">
+            <a href="/images/Koutoubia Mosque.jpg">
               <img
                 src="/images/Koutoubia Mosque.jpg"
                 alt="Koutoubia Mosque"
@@ -48,7 +48,7 @@ export const localExperiences = [
               <strong>Bahia Palace:</strong> A stunning 19th-century palace
               showcasing traditional Moroccan architecture and gardens.
             </p>
-            <a href="/images/Bahia Palace.jpg" target="_blank" rel="noopener noreferrer">
+            <a href="/images/Bahia Palace.jpg">
               <img
                 src="/images/Bahia Palace.jpg"
                 alt="Bahia Palace"
@@ -61,7 +61,7 @@ export const localExperiences = [
               <strong>Majorelle Garden:</strong> A peaceful botanical garden
               filled with exotic plants and vibrant colors.
             </p>
-            <a href="/images/Majorelle Garden.jpg" target="_blank" rel="noopener noreferrer">
+            <a href="/images/Majorelle Garden.jpg">
               <img
                 src="/images/Majorelle Garden.jpg"
                 alt="Majorelle Garden"
@@ -74,7 +74,7 @@ export const localExperiences = [
               <strong>Souks of Marrakech:</strong> Explore narrow alleys lined
               with shops selling spices, leather goods, textiles, and more.
             </p>
-            <a href="/images/Souks of Marrakech.jpg" target="_blank" rel="noopener noreferrer">
+            <a href="/images/Souks of Marrakech.jpg">
               <img
                 src="/images/Souks of Marrakech.jpg"
                 alt="Souks of Marrakech"
