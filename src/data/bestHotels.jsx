@@ -626,5 +626,107 @@ export const bestHotels = [
       '/images/stayherecasa7.jpg',
       '/images/stayherecasa9.jpg'
     ]
+  },
+  {
+    slug: 'chefchaouen-hotel-alkhalifa',
+    title: 'Chefchaouen Hotel Alkhalifa',
+    description:
+      'Traditional Moroccan architecture with modern comforts in the heart of Chefchaouen.',
+    details: (
+      <section className="max-w-4xl mx-auto p-6">
+        <h1 className="text-3xl font-bold mb-4">
+          Hotel Alkhalifa — Traditional Charm in Chefchaouen
+        </h1>
+        <p className="mb-4">
+          <strong>Hotel Alkhalifa</strong> blends traditional Moroccan architecture
+          with modern comforts, offering air-conditioned rooms, a beautiful garden,
+          and a terrace with mountain views. Located just minutes from Chefchaouen’s
+          historic sites, it’s the perfect base for your adventure.
+        </p>
+
+        <h2 className="text-2xl font-semibold mt-6 mb-2">
+          <IconStar /> Why Guests Love It
+        </h2>
+        <ul className="list-disc list-inside mb-4">
+          <li>
+            <IconCheck /> Prime location near:
+            <ul className="list-disc list-inside ml-6">
+              <li>Kasba (500 m)</li>
+              <li>Outa El Hammam Square (600 m)</li>
+              <li>Mohammed V Square (1.2 km)</li>
+            </ul>
+          </li>
+          <li>
+            <IconCheck /> Peaceful garden and sun terrace
+          </li>
+          <li>
+            <IconCheck /> Free Wi-Fi throughout the property
+          </li>
+          <li>
+            <IconCheck /> Family-friendly rooms available
+          </li>
+          <li>
+            <IconCheck /> About 130 km from Tangier Ibn Battuta Airport
+          </li>
+        </ul>
+
+        <h2 className="text-2xl font-semibold mt-6 mb-2">
+          <IconBed /> Room Highlights
+        </h2>
+        <ul className="list-disc list-inside mb-4">
+          <li>
+            <IconCheck /> Air conditioning
+          </li>
+          <li>
+            <IconCheck /> Private bathroom with shower, free toiletries, hairdryer
+          </li>
+          <li>
+            <IconCheck /> Flat-screen TV with satellite channels
+          </li>
+          <li>
+            <IconCheck /> Some rooms with mountain or street views
+          </li>
+        </ul>
+
+        <h2 className="text-2xl font-semibold mt-6 mb-2">
+          <IconCar /> Nearby Dining
+        </h2>
+        <ul className="list-disc list-inside mb-4">
+          <li>El Jaleo Restaurant (50 m)</li>
+          <li>Smalt Café (250 m)</li>
+          <li>Toda Creperie (450 m)</li>
+        </ul>
+
+        <p className="mb-6">
+          Experience the unique charm of Chefchaouen from{' '}
+          <strong>Hotel Alkhalifa</strong> — where traditional style meets warm
+          hospitality.
+        </p>
+
+        <a
+          href="https://www.booking.com/Share-SDRs9cA"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition"
+        >
+          Check Availability &amp; Book Now
+        </a>
+      </section>
+    ),
+    image: '/images/chefchaoun.jpg',
+    images: [
+      '/images/chef10.jpg',
+      '/images/chef11.jpg',
+      '/images/chef12.jpg',
+      '/images/chef2.jpg',
+      '/images/chef3.jpg',
+      '/images/chef4.jpg',
+      '/images/chef5.jpg',
+      '/images/chef6.jpg',
+      '/images/chef7.jpg',
+      '/images/chef8.jpg',
+      '/images/chef9.jpg',
+      '/images/chefchaoun.jpg'
+    ]
   }
 ];
