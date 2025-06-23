@@ -520,10 +520,111 @@ export const bestHotels = [
     ]
   },
   {
-    slug: 'riad-fes',
-    title: 'Riad Fes',
-    description: 'Elegant riad blending traditional architecture with modern comfort.',
-    details: 'Located in Fes\' ancient medina, Riad Fes offers a serene escape with rooftop views and authentic design.',
-    image: 'https://source.unsplash.com/featured/?fes,riad'
+    slug: 'stayhere-casablanca-gauthier-1-modern-residence',
+    title: 'Stayhere Casablanca - Gauthier 1 - Modern Residence',
+    description:
+      'Modern residence in downtown Casablanca offering stylish accommodation and free Wi-Fi.',
+    details: (
+      <section className="max-w-4xl mx-auto p-6">
+        <h1 className="text-3xl font-bold mb-4">
+          Stayhere Casablanca - Gauthier 1 — Modern Comfort in Downtown
+          Casablanca
+        </h1>
+        <p className="mb-4">
+          <strong>Stayhere Casablanca - Gauthier 1 - Modern Residence</strong>
+          {" "}
+          offers stylish, air-conditioned accommodation in the heart of
+          Casablanca. Just a short distance from Hassan II Mosque and Anfa
+          Place Living Resort, it provides modern amenities with free Wi-Fi and
+          private parking.
+        </p>
+
+        <h2 className="text-2xl font-semibold mt-6 mb-2">
+          <IconStar /> Why Choose This Residence?
+        </h2>
+        <ul className="list-disc list-inside mb-4">
+          <li>
+            <IconCheck /> Prime location near:
+            <ul className="list-disc list-inside ml-6">
+              <li>Arab League Park (400 m)</li>
+              <li>Anfa Place Living Resort (4.5 km)</li>
+              <li>Hassan II Mosque (4.6 km)</li>
+              <li>Casablanca Marina (within 5 km)</li>
+            </ul>
+          </li>
+          <li>
+            <IconCheck /> Access to garden and terrace for relaxation
+          </li>
+          <li>
+            <IconCheck /> Free private parking — no reservation needed
+          </li>
+          <li>
+            <IconCheck /> Complimentary Wi-Fi throughout the property
+          </li>
+          <li>
+            <IconCheck /> 27 km from Mohammed V International Airport
+          </li>
+        </ul>
+
+        <h2 className="text-2xl font-semibold mt-6 mb-2">
+          <IconBed /> Accommodation Features
+        </h2>
+        <ul className="list-disc list-inside mb-4">
+          <li>
+            <IconCheck /> Air conditioning
+          </li>
+          <li>
+            <IconCheck /> Private bathroom with shower and free toiletries
+          </li>
+          <li>
+            <IconCheck /> Kitchenette with fridge, oven, stovetop, microwave,
+            coffee maker
+          </li>
+          <li>
+            <IconCheck /> Flat-screen TV with streaming (like Netflix)
+          </li>
+          <li>
+            <IconCheck /> Non-smoking rooms
+          </li>
+          <li>
+            <IconCheck /> Lift access to upper floors
+          </li>
+        </ul>
+
+        <h2 className="text-2xl font-semibold mt-6 mb-2">
+          <IconCar /> Nearby Dining
+        </h2>
+        <ul className="list-disc list-inside mb-4">
+          <li>Hasnae Anfa Café (100 m)</li>
+          <li>Cocktail Dream Bar (350 m)</li>
+          <li>Casa Jose Gauthier Restaurant (100 m)</li>
+        </ul>
+
+        <p className="mb-6">
+          <strong>Stayhere Casablanca - Gauthier 1</strong> is the ideal base for
+          exploring the city while enjoying a comfortable, modern stay.
+        </p>
+
+        <a
+          href="https://www.booking.com/Share-HaBbrHy"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition"
+        >
+          Check Availability &amp; Book Now
+        </a>
+      </section>
+    ),
+    image: '/images/stayherecasa.jpg',
+    images: [
+      '/images/stayhere8.jpg',
+      '/images/stayherecasa2.jpg',
+      '/images/stayherecasa3.jpg',
+      '/images/stayherecasa4.jpg',
+      '/images/stayherecasa5.jpg',
+      '/images/stayherecasa6.jpg',
+      '/images/stayherecasa7.jpg',
+      '/images/stayherecasa9.jpg'
+    ]
   }
 ];
