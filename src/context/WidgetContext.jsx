@@ -2,8 +2,13 @@ import React, { createContext, useState, useContext } from 'react';
 
 const WidgetContext = createContext();
 
+const getDefaultWidget = () => {
+  const params = new URLSearchParams(window.location.search);
+  return params.get('service') || 'hotel-flight';
+};
+
 export const WidgetProvider = ({ children }) => {
-  const [activeWidget, setActiveWidget] = useState('hotel-flight');
+  const [activeWidget, setActiveWidget] = useState(getDefaultWidget());
 
   const switchWidget = (widgetType) => {
     setActiveWidget(widgetType);
@@ -17,3 +22,4 @@ export const WidgetProvider = ({ children }) => {
 };
 
 export const useWidget = () => useContext(WidgetContext);
+

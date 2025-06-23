@@ -13,11 +13,11 @@ const BookingWidget = () => {
 
   useEffect(() => {
     const service = searchParams.get('service');
-    if (service) {
+    if (service && service !== activeWidget) {
       switchWidget(service);
     }
     // Only run this effect when the query parameter changes
-  }, [searchParams]);
+  }, [searchParams, activeWidget, switchWidget]);
 
   return (
     <div

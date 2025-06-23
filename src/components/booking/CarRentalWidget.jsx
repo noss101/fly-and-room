@@ -1,10 +1,12 @@
 import React, { useEffect, useRef } from 'react';
+import { useWidget } from '../../context/WidgetContext';
 
 const CarRentalWidget = () => {
+  const { activeWidget } = useWidget();
   const loaded = useRef(false);
 
   useEffect(() => {
-    if (loaded.current) return;
+    if (activeWidget !== 'car-rental' || loaded.current) return;
 
     const script = document.createElement('script');
     script.src =
@@ -17,9 +19,9 @@ const CarRentalWidget = () => {
       container.appendChild(script);
       loaded.current = true;
     }
-  }, []);
+  }, [activeWidget]);
 
   return <div id="car-rental-widget-container" className="w-full shadow-lg"></div>;
 };
 
-export default CarRentalWidget;
+export default CarRentalWidget
