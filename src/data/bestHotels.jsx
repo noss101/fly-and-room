@@ -728,5 +728,106 @@ export const bestHotels = [
       '/images/chef9.jpg',
       '/images/chefchaoun.jpg'
     ]
+  },
+  {
+    slug: 'agadir-stayhere-beachfront-escape',
+    title: 'Agadir StayHere Beachfront Escape',
+    description:
+      'Modern beachfront apartments in Agadir with free Wi-Fi and sea or city views.',
+    details: (
+      <section className="max-w-4xl mx-auto p-6">
+        <h1 className="text-3xl font-bold mb-4">
+          StayHere Beachfront Escape — Your Seaside Getaway in Agadir
+        </h1>
+        <p className="mb-4">
+          <strong>StayHere Beachfront Escape</strong> offers modern beachfront
+          accommodation in the heart of Agadir. Just 500 meters from Agadir
+          Beach, this residence features air-conditioned rooms, free Wi-Fi, and
+          stunning views of the sea or city.
+        </p>
+
+        <h2 className="text-2xl font-semibold mt-6 mb-2">
+          <IconStar /> Why Guests Love It
+        </h2>
+        <ul className="list-disc list-inside mb-4">
+          <li>
+            <IconCheck /> Excellent location near:
+            <ul className="list-disc list-inside ml-6">
+              <li>Agadir Beach (500 m)</li>
+              <li>Marina Agadir (900 m)</li>
+              <li>Agadir Oufella Ruins (1.2 km)</li>
+              <li>Amazighe Heritage Museum (4 km)</li>
+            </ul>
+          </li>
+          <li>
+            <IconCheck /> Beachfront property with terrace
+          </li>
+          <li>
+            <IconCheck /> Free Wi-Fi throughout
+          </li>
+          <li>
+            <IconCheck /> Family-friendly with spacious apartments
+          </li>
+        </ul>
+
+        <h2 className="text-2xl font-semibold mt-6 mb-2">
+          <IconBed /> Apartment Features
+        </h2>
+        <ul className="list-disc list-inside mb-4">
+          <li>
+            <IconCheck /> Air conditioning
+          </li>
+          <li>
+            <IconCheck /> Private bathroom with shower, bathtub, and hairdryer
+          </li>
+          <li>
+            <IconCheck /> Fully equipped kitchen: fridge, oven, microwave,
+            dishwasher, stovetop, coffee maker
+          </li>
+          <li>
+            <IconCheck /> Flat-screen TV
+          </li>
+          <li>
+            <IconCheck /> Balcony or patio with sea or city views
+          </li>
+        </ul>
+
+        <h2 className="text-2xl font-semibold mt-6 mb-2">
+          <IconCar /> Nearby Dining
+        </h2>
+        <ul className="list-disc list-inside mb-4">
+          <li>Coffeeshop Company (600 m)</li>
+          <li>Herguita Restaurant (550 m)</li>
+          <li>Café Courmet (700 m)</li>
+        </ul>
+
+        <p className="mb-6">
+          Discover a blend of comfort and convenience at{' '}
+          <strong>StayHere Beachfront Escape</strong> — the ideal choice for a
+          relaxing stay by the sea.
+        </p>
+
+        <a
+          href="https://www.booking.com/Share-rJ7MF0"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition"
+        >
+          Check Availability &amp; Book Now
+        </a>
+      </section>
+    ),
+    image: '/images/agadirstayhere.jpg',
+    images: [
+      '/images/agadirstayhere10.jpg',
+      '/images/agadirstayhere2.jpg',
+      '/images/agadirstayhere3.jpg',
+      '/images/agadirstayhere4.jpg',
+      '/images/agadirstayhere5.jpg',
+      '/images/agadirstayhere6.jpg',
+      '/images/agadirstayhere7.jpg',
+      '/images/agadirstayhere8.jpg',
+      '/images/agadirstayhere9.jpg'
+    ]
   }
 ];
