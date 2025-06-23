@@ -30,7 +30,7 @@ const MoroccoSection = () => {
             Find More
           </Link>
         </div>
-        <div className="bg-white/70 backdrop-blur-md rounded-3xl shadow-2xl p-8 text-center">
+        <div className="bg-white/70 backdrop-blur-md shadow-2xl p-8 text-center w-screen relative left-1/2 right-1/2 ml-[-50vw] mr-[-50vw]">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-center">
             Places for Tourists
             <span className="inline-flex items-center">
