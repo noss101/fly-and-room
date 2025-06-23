@@ -415,11 +415,11 @@ export const bestHotels = [
         </p>
 
         <h2 className="text-2xl font-semibold mt-6 mb-2">
-          <span style={{ color: '#272724' }}>🌟</span> Why Stay Here?
+          <IconStar /> Why Stay Here?
         </h2>
         <ul className="list-disc list-inside mb-4">
           <li>
-            <span style={{ color: '#272724' }}>📍</span> Central location,
+            <IconCheck /> Central location,
             close to:
             <ul className="list-disc list-inside ml-6">
               <li>Royal Palace of Fez (2.8 km)</li>
@@ -429,61 +429,67 @@ export const bestHotels = [
             </ul>
           </li>
           <li>
-            <span style={{ color: '#272724' }}>🏖</span> Outdoor swimming pool
+            <IconCheck /> Outdoor swimming pool
             with sun loungers &amp; pool bar
           </li>
           <li>
-            <span style={{ color: '#272724' }}>🍽</span> 6 restaurants serving
+            <IconCheck /> 6 restaurants serving
             Moroccan &amp; international cuisine
           </li>
           <li>
-            <span style={{ color: '#272724' }}>🚗</span> Free private parking
+            <IconCheck /> Free private parking
             on-site
           </li>
           <li>
-            <span style={{ color: '#272724' }}>✈️</span> Airport shuttle
+            <IconCheck /> Airport shuttle
             available (13 km to Fez Sais Airport)
           </li>
         </ul>
 
         <h2 className="text-2xl font-semibold mt-6 mb-2">
-          <span style={{ color: '#272724' }}>🏨</span> Room &amp; Facility
+          <IconBed /> Room &amp; Facility
           Highlights
         </h2>
         <ul className="list-disc list-inside mb-4">
           <li>
-            <span style={{ color: '#272724' }}>❄️</span> Air-conditioned rooms
+            <IconCheck /> Air-conditioned rooms
             with balconies
           </li>
           <li>
-            <span style={{ color: '#272724' }}>🌳</span> Views of the gardens or
+            <IconCheck /> Views of the gardens or
             pool
           </li>
           <li>
-            <span style={{ color: '#272724' }}>📺</span> Flat-screen TV, free
+            <IconCheck /> Flat-screen TV, free
             Wi-Fi, lift access
           </li>
           <li>
-            <span style={{ color: '#272724' }}>🛁</span> En-suite bathrooms with
+            <IconCheck /> En-suite bathrooms with
             free toiletries
           </li>
           <li>
-            <span style={{ color: '#272724' }}>🏋️</span> Modern fitness center
+            <IconCheck /> Modern fitness center
             &amp; spa
           </li>
           <li>
-            <span style={{ color: '#272724' }}>📚</span> Library &amp; relaxation
+            <IconCheck /> Library &amp; relaxation
             lounge
           </li>
         </ul>
 
         <h2 className="text-2xl font-semibold mt-6 mb-2">
-          <span style={{ color: '#272724' }}>🎶</span> Extra Experiences
+          <IconStar /> Extra Experiences
         </h2>
         <ul className="list-disc list-inside mb-4">
-          <li>💆 Spa with sauna, massages, and wellness treatments</li>
-          <li>🎤 Live music, cultural tours, and themed dinners</li>
-          <li>🚲 Bike rentals and nearby golf (Royal Golf de Fez)</li>
+          <li>
+            <IconCheck /> Spa with sauna, massages, and wellness treatments
+          </li>
+          <li>
+            <IconCheck /> Live music, cultural tours, and themed dinners
+          </li>
+          <li>
+            <IconCheck /> Bike rentals and nearby golf (Royal Golf de Fez)
+          </li>
         </ul>
 
         <p className="mb-6">
