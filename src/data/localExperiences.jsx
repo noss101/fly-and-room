@@ -5,7 +5,7 @@ export const localExperiences = [
     description:
       'Discover the charm of Marrakech, where tradition meets modern life. This vibrant city offers an unforgettable experience for tourists, with its lively streets, colorful souks, and historic landmarks.',
     details: (
-      <div className="p-4 bg-white rounded shadow">
+      <div className="p-4 bg-white rounded shadow-2xl">
         <h2 className="text-2xl font-bold mb-3">
           Marrakech Tour and Places for Tourists
         </h2>
@@ -17,7 +17,7 @@ export const localExperiences = [
 
         <h3 className="text-xl font-semibold mb-2">Top Places to Visit</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-3">
-          <div className="bg-white rounded-lg shadow-lg p-4">
+          <div className="bg-white rounded-lg shadow-2xl p-4">
             <p>
               <strong>Jemaa el-Fnaa:</strong> The heart of Marrakech, known for
               its street performers, food stalls, and local crafts.
@@ -30,7 +30,7 @@ export const localExperiences = [
               />
             </a>
           </div>
-          <div className="bg-white rounded-lg shadow-lg p-4">
+          <div className="bg-white rounded-lg shadow-2xl p-4">
             <p>
               <strong>Koutoubia Mosque:</strong> The city's iconic landmark with
               a beautiful minaret visible from many parts of Marrakech.
@@ -43,7 +43,7 @@ export const localExperiences = [
               />
             </a>
           </div>
-          <div className="bg-white rounded-lg shadow-lg p-4">
+          <div className="bg-white rounded-lg shadow-2xl p-4">
             <p>
               <strong>Bahia Palace:</strong> A stunning 19th-century palace
               showcasing traditional Moroccan architecture and gardens.
@@ -56,7 +56,7 @@ export const localExperiences = [
               />
             </a>
           </div>
-          <div className="bg-white rounded-lg shadow-lg p-4">
+          <div className="bg-white rounded-lg shadow-2xl p-4">
             <p>
               <strong>Majorelle Garden:</strong> A peaceful botanical garden
               filled with exotic plants and vibrant colors.
@@ -69,7 +69,7 @@ export const localExperiences = [
               />
             </a>
           </div>
-          <div className="bg-white rounded-lg shadow-lg p-4">
+          <div className="bg-white rounded-lg shadow-2xl p-4">
             <p>
               <strong>Souks of Marrakech:</strong> Explore narrow alleys lined
               with shops selling spices, leather goods, textiles, and more.
@@ -92,12 +92,6 @@ export const localExperiences = [
           blends the past with the present.
         </p>
 
-        <a
-          href="/local-experiences/marrakech-tour"
-          className="inline-block mt-2 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
-        >
-          Learn More
-        </a>
       </div>
     ),
     image: '/images/MarrakechLuxuryRiads.jpg'
