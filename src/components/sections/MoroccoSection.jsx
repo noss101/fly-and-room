@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { localExperiences } from '../../data/localExperiences';
+import { localExperiences } from '../../data/localExperiences.jsx';
 import { bestHotels } from '../../data/bestHotels.jsx';
 import HotelCard from '../HotelCard.jsx';
 import ServicesSection from './ServicesSection';

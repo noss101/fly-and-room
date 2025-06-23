@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { localExperiences } from '../data/localExperiences';
+import { localExperiences } from '../data/localExperiences.jsx';
 
 const LocalExpDetailPage = () => {
   const { slug } = useParams();
