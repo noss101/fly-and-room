@@ -7,7 +7,8 @@ import ServicesSection from './ServicesSection';
 
 const MoroccoSection = () => {
   const previewExperiences = localExperiences.slice(0, 3);
-  const previewHotels = bestHotels.slice(0, 3);
+  const hotels = bestHotels;
+  const scrollingHotels = [...hotels, ...hotels];
   return (
     <section className="py-16">
       <div className="container mx-auto px-4 space-y-8">
@@ -15,14 +16,14 @@ const MoroccoSection = () => {
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-center">
             Exclusive <span className="text-primary">Hotels</span>
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
-            {previewHotels.map((hotel, index) => (
-              <HotelCard
-                key={index}
-                hotel={hotel}
-                animation="animate-slide-left-slow"
-              />
-            ))}
+          <div className="overflow-hidden mt-6">
+            <div className="flex w-max space-x-4 animate-marquee">
+              {scrollingHotels.map((hotel, index) => (
+                <div key={index} className="w-80 flex-shrink-0">
+                  <HotelCard hotel={hotel} />
+                </div>
+              ))}
+            </div>
           </div>
           <Link
             to="/best-hotels"
