@@ -7,8 +7,7 @@ import ServicesSection from './ServicesSection';
 
 const MoroccoSection = () => {
   const previewExperiences = localExperiences.slice(0, 3);
-  const previewHotels = bestHotels.slice(0, 3);
-  const scrollingHotels = [...previewHotels, ...previewHotels];
+  const scrollingHotels = [...bestHotels, ...bestHotels];
   return (
     <section className="py-16">
       <div className="container mx-auto px-4 space-y-8">
