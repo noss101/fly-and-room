@@ -1,10 +1,12 @@
-import js from '@eslint/js'
-import globals from 'globals'
-import reactHooks from 'eslint-plugin-react-hooks'
-import reactRefresh from 'eslint-plugin-react-refresh'
+import { createRequire } from 'module'
+
+const require = createRequire(import.meta.url)
+const js = require('./vendor/@eslint/js/src/index.js')
+const globals = require('./vendor/globals/index.js').default
+// Disabled react-hooks and react-refresh plugins due to unavailable packages
 
 export default [
-  { ignores: ['dist'] },
+  { ignores: ['dist', 'vendor'] },
   {
     files: ['**/*.{js,jsx}'],
     languageOptions: {
@@ -16,18 +18,11 @@ export default [
         sourceType: 'module',
       },
     },
-    plugins: {
-      'react-hooks': reactHooks,
-      'react-refresh': reactRefresh,
-    },
+    // No additional plugins
+    plugins: {},
     rules: {
       ...js.configs.recommended.rules,
-      ...reactHooks.configs.recommended.rules,
       'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
-      'react-refresh/only-export-components': [
-        'warn',
-        { allowConstantExport: true },
-      ],
     },
   },
 ]
