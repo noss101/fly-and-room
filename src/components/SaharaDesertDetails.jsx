@@ -38,8 +38,31 @@ const SaharaDesertDetails = () => {
             </div>
           </div>
         </li>
-        <li>
-          <strong>Overnight Camps:</strong> Stay in traditional Berber tents and enjoy local music, food, and stargazing.
+        <li className="flex items-start flex-col">
+          <div className="flex items-start">
+            <img
+              src="/icons/capmicon.png"
+              alt="Camp icon"
+              className="w-5 h-5 mr-2 inline"
+              loading="lazy"
+            />
+            <span>
+              <strong>Overnight Camps:</strong> Stay in traditional Berber tents and enjoy local music, food, and stargazing.
+            </span>
+          </div>
+          <div className="mt-2">
+            <div
+              className="bg-white rounded-xl overflow-hidden shadow-lg w-40 cursor-pointer"
+              onClick={() => setOpenImage('/images/Overnight Camps desert.png')}
+            >
+              <img
+                src="/images/Overnight Camps desert.png"
+                alt="Overnight Camps"
+                className="h-28 w-full object-cover"
+                loading="lazy"
+              />
+            </div>
+          </div>
         </li>
         <li>
           <strong>4x4 Desert Tours:</strong> Explore hidden oases, rock formations, and remote villages on a guided tour.
