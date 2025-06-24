@@ -19,20 +19,26 @@ const MarrakechTourDetails = () => {
       </p>
 
       <h3 className="text-xl font-semibold mb-2">Top Places to Visit</h3>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-3">
+      <ul className="list-disc list-inside mb-3 space-y-4">
         {images.map((img, idx) => (
-          <div key={idx} className="bg-white rounded-lg shadow-2xl p-4">
-            <p>{img.desc}</p>
-            <img
-              src={img.src}
-              alt={img.alt}
-              className="mt-2 w-full h-40 object-cover rounded cursor-pointer"
-              onClick={() => setOpenImage(img.src)}
-              loading="eager"
-            />
-          </div>
+          <li key={idx} className="flex items-start flex-col">
+            <span>{img.desc}</span>
+            <div className="mt-2">
+              <div
+                className="bg-white rounded-xl overflow-hidden shadow-lg w-40 cursor-pointer"
+                onClick={() => setOpenImage(img.src)}
+              >
+                <img
+                  src={img.src}
+                  alt={img.alt}
+                  className="h-28 w-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </li>
         ))}
-      </div>
+      </ul>
 
       <h3 className="text-xl font-semibold mb-2">Why Choose Marrakech</h3>
       <p className="mb-3">
