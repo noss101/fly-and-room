@@ -21,6 +21,7 @@ const Footer = () => {
     src="/logos/newlogoo.png"
     alt="Fly and Room Logo"
     className="h-16 sm:h-20 md:h-24 w-auto"
+    loading="lazy"
   />
 </Link>
               <p className="mt-2 text-gray-600 max-w-md text-sm md:text-base">
