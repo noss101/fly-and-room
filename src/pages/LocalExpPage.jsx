@@ -28,7 +28,6 @@ const LocalExpPage = () => {
               src={exp.image ? exp.image : `/localexp/${exp.slug}.svg`}
               alt={exp.title}
               className="h-48 w-full object-cover"
-              loading="lazy"
             />
             <div className="p-6">
               <h3 className="text-xl font-bold mb-2">{exp.title}</h3>

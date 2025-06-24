@@ -26,7 +26,6 @@ const Navbar = () => {
             src="/logos/newlogoo.png"
             alt="Fly and Room Logo"
             className="h-12 md:h-16 transform scale-125 origin-left"
-            loading="lazy"
           />
         </Link>
         
