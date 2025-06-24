@@ -90,8 +90,31 @@ const SaharaDesertDetails = () => {
             </div>
           </div>
         </li>
-        <li>
-          <strong>Sandboarding:</strong> Feel the thrill as you slide down the giant sand dunes.
+        <li className="flex items-start flex-col">
+          <div className="flex items-start">
+            <img
+              src="/icons/sandbordicon.png"
+              alt="Sandboarding icon"
+              className="w-5 h-5 mr-2 inline"
+              loading="lazy"
+            />
+            <span>
+              <strong>Sandboarding:</strong> Feel the thrill as you slide down the giant sand dunes.
+            </span>
+          </div>
+          <div className="mt-2">
+            <div
+              className="bg-white rounded-xl overflow-hidden shadow-lg w-40 cursor-pointer"
+              onClick={() => setOpenImage('/images/sandboarding (1).jpg')}
+            >
+              <img
+                src="/images/sandboarding (1).jpg"
+                alt="Sandboarding"
+                className="h-28 w-full object-cover"
+                loading="lazy"
+              />
+            </div>
+          </div>
         </li>
         <li>
           <strong>Sunset Views:</strong> Watch the sun set over the vast desert landscape — a truly breathtaking sight.
