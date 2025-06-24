@@ -116,8 +116,31 @@ const SaharaDesertDetails = () => {
             </div>
           </div>
         </li>
-        <li>
-          <strong>Sunset Views:</strong> Watch the sun set over the vast desert landscape — a truly breathtaking sight.
+        <li className="flex items-start flex-col">
+          <div className="flex items-start">
+            <img
+              src="/icons/saharanighticon.png"
+              alt="Sunset icon"
+              className="w-5 h-5 mr-2 inline"
+              loading="lazy"
+            />
+            <span>
+              <strong>Sunset Views:</strong> Watch the sun set over the vast desert landscape — a truly breathtaking sight.
+            </span>
+          </div>
+          <div className="mt-2">
+            <div
+              className="bg-white rounded-xl overflow-hidden shadow-lg w-40 cursor-pointer"
+              onClick={() => setOpenImage('/images/Sahara-Desert-night.jpg')}
+            >
+              <img
+                src="/images/Sahara-Desert-night.jpg"
+                alt="Sunset Views"
+                className="h-28 w-full object-cover"
+                loading="lazy"
+              />
+            </div>
+          </div>
         </li>
       </ul>
 
