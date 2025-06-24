@@ -34,6 +34,7 @@ const HotelDetailPage = () => {
                   src={src}
                   alt={`${hotel.title} ${idx + 1}`}
                   className="w-full h-40 object-cover cursor-pointer"
+                  loading="lazy"
                 />
               </button>
             ))}
@@ -43,7 +44,12 @@ const HotelDetailPage = () => {
               className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75"
               onClick={() => setSelectedImage(null)}
             >
-              <img src={selectedImage} alt="Selected" className="max-h-full max-w-full" />
+              <img
+                src={selectedImage}
+                alt="Selected"
+                className="max-h-full max-w-full"
+                loading="lazy"
+              />
             </div>
           )}
         </>
