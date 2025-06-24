@@ -1,11 +1,41 @@
 import React, { useState } from 'react';
 
 const images = [
-  { src: '/images/Jemaa el-Fnaa.jpg', alt: 'Jemaa el-Fnaa', desc: 'Jemaa el-Fnaa: The heart of Marrakech, known for its street performers, food stalls, and local crafts.' },
-  { src: '/images/Koutoubia Mosque.jpg', alt: 'Koutoubia Mosque', desc: "Koutoubia Mosque: The city's iconic landmark with a beautiful minaret visible from many parts of Marrakech." },
-  { src: '/images/Bahia Palace.jpg', alt: 'Bahia Palace', desc: 'Bahia Palace: A stunning 19th-century palace showcasing traditional Moroccan architecture and gardens.' },
-  { src: '/images/Majorelle Garden.jpg', alt: 'Majorelle Garden', desc: 'Majorelle Garden: A peaceful botanical garden filled with exotic plants and vibrant colors.' },
-  { src: '/images/Souks of Marrakech.jpg', alt: 'Souks of Marrakech', desc: 'Souks of Marrakech: Explore narrow alleys lined with shops selling spices, leather goods, textiles, and more.' },
+  {
+    src: '/images/Jemaa el-Fnaa.jpg',
+    alt: 'Jemaa el-Fnaa',
+    title: 'Jemaa el-Fnaa',
+    desc:
+      'The heart of Marrakech, known for its street performers, food stalls, and local crafts.',
+  },
+  {
+    src: '/images/Koutoubia Mosque.jpg',
+    alt: 'Koutoubia Mosque',
+    title: 'Koutoubia Mosque',
+    desc:
+      "The city's iconic landmark with a beautiful minaret visible from many parts of Marrakech.",
+  },
+  {
+    src: '/images/Bahia Palace.jpg',
+    alt: 'Bahia Palace',
+    title: 'Bahia Palace',
+    desc:
+      'A stunning 19th-century palace showcasing traditional Moroccan architecture and gardens.',
+  },
+  {
+    src: '/images/Majorelle Garden.jpg',
+    alt: 'Majorelle Garden',
+    title: 'Majorelle Garden',
+    desc:
+      'A peaceful botanical garden filled with exotic plants and vibrant colors.',
+  },
+  {
+    src: '/images/Souks of Marrakech.jpg',
+    alt: 'Souks of Marrakech',
+    title: 'Souks of Marrakech',
+    desc:
+      'Explore narrow alleys lined with shops selling spices, leather goods, textiles, and more.',
+  },
 ];
 
 const MarrakechTourDetails = () => {
@@ -22,7 +52,9 @@ const MarrakechTourDetails = () => {
       <ul className="list-disc list-inside mb-3 space-y-4">
         {images.map((img, idx) => (
           <li key={idx} className="flex items-start flex-col">
-            <span>{img.desc}</span>
+            <span>
+              <strong>{img.title}:</strong> {img.desc}
+            </span>
             <div className="mt-2">
               <div
                 className="bg-white rounded-xl overflow-hidden shadow-lg w-40 cursor-pointer"
