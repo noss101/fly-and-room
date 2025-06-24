@@ -10,8 +10,16 @@ const SaharaDesertDetails = () => {
 
       <h3 className="text-xl font-semibold mb-2">Top Experiences</h3>
       <ul className="list-disc list-inside mb-3">
-        <li>
-          <strong>Camel Trekking:</strong> Journey through the dunes on camelback and experience the desert like a nomad.
+        <li className="flex items-start">
+          <img
+            src="/images/camelicon.png"
+            alt="Camel icon"
+            className="w-5 h-5 mr-2 inline"
+            loading="lazy"
+          />
+          <span>
+            <strong>Camel Trekking:</strong> Journey through the dunes on camelback and experience the desert like a nomad.
+          </span>
         </li>
         <li>
           <strong>Overnight Camps:</strong> Stay in traditional Berber tents and enjoy local music, food, and stargazing.
