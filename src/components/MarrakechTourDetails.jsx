@@ -28,6 +28,7 @@ const MarrakechTourDetails = () => {
               alt={img.alt}
               className="mt-2 w-full h-40 object-cover rounded cursor-pointer"
               onClick={() => setOpenImage(img.src)}
+              loading="lazy"
             />
           </div>
         ))}
@@ -43,7 +44,12 @@ const MarrakechTourDetails = () => {
           className="fixed inset-0 flex items-center justify-center bg-black/70 z-50"
           onClick={() => setOpenImage(null)}
         >
-          <img src={openImage} alt="Preview" className="max-h-full max-w-full rounded" />
+          <img
+            src={openImage}
+            alt="Preview"
+            className="max-h-full max-w-full rounded"
+            loading="lazy"
+          />
         </div>
       )}
     </div>
