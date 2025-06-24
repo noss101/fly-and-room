@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const SaharaDesertDetails = () => {
+  const [openImage, setOpenImage] = useState(null);
+
   return (
-    <div className="p-4 bg-white rounded shadow">
+    <div className="p-4 bg-white rounded shadow-2xl">
       <h2 className="text-2xl font-bold mb-3">Sahara Desert Adventures</h2>
       <p className="mb-3">
         Explore the magic of the Sahara Desert, where endless golden dunes meet the horizon. From thrilling camel rides to peaceful nights under the stars, the Sahara offers an unforgettable adventure for every traveler.
@@ -10,16 +12,31 @@ const SaharaDesertDetails = () => {
 
       <h3 className="text-xl font-semibold mb-2">Top Experiences</h3>
       <ul className="list-disc list-inside mb-3">
-        <li className="flex items-start">
-          <img
-            src="/images/camelicon.png"
-            alt="Camel icon"
-            className="w-5 h-5 mr-2 inline"
-            loading="lazy"
-          />
-          <span>
-            <strong>Camel Trekking:</strong> Journey through the dunes on camelback and experience the desert like a nomad.
-          </span>
+        <li className="flex items-start flex-col">
+          <div className="flex items-start">
+            <img
+              src="/images/camelicon.png"
+              alt="Camel icon"
+              className="w-5 h-5 mr-2 inline"
+              loading="lazy"
+            />
+            <span>
+              <strong>Camel Trekking:</strong> Journey through the dunes on camelback and experience the desert like a nomad.
+            </span>
+          </div>
+          <div className="mt-2">
+            <div
+              className="bg-white rounded-xl overflow-hidden shadow-lg w-40 cursor-pointer"
+              onClick={() => setOpenImage('/images/Camel Trekking.jpg')}
+            >
+              <img
+                src="/images/Camel Trekking.jpg"
+                alt="Camel Trekking"
+                className="h-28 w-full object-cover"
+                loading="lazy"
+              />
+            </div>
+          </div>
         </li>
         <li>
           <strong>Overnight Camps:</strong> Stay in traditional Berber tents and enjoy local music, food, and stargazing.
@@ -43,6 +60,20 @@ const SaharaDesertDetails = () => {
       <a href="/local-experiences/sahara-desert-adventures" className="inline-block mt-2 bg-yellow-600 text-white px-4 py-2 rounded hover:bg-yellow-700 transition">
         Learn More
       </a>
+
+      {openImage && (
+        <div
+          className="fixed inset-0 flex items-center justify-center bg-black/70 z-50"
+          onClick={() => setOpenImage(null)}
+        >
+          <img
+            src={openImage}
+            alt="Preview"
+            className="max-h-full max-w-full rounded"
+            loading="eager"
+          />
+        </div>
+      )}
     </div>
   );
 };
