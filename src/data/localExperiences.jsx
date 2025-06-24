@@ -1,5 +1,6 @@
 import React from 'react';
 import MarrakechTourDetails from '../components/MarrakechTourDetails.jsx';
+import SaharaDesertDetails from '../components/SaharaDesertDetails.jsx';
 
 export const localExperiences = [
   {
@@ -14,7 +15,7 @@ export const localExperiences = [
     slug: 'sahara-desert-adventures',
     title: 'Sahara Desert Adventures',
     description: 'Camel treks, desert camping, and star gazing in the majestic Sahara.',
-    details: 'Embark on camel rides across rolling dunes, spend nights under a starlit sky, and witness breathtaking desert landscapes.',
+    details: <SaharaDesertDetails />,
     image: '/images/SaharaDesertAdventures.jpg'
   },
   {
