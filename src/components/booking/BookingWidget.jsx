@@ -47,7 +47,7 @@ const BookingWidget = () => {
             src="/icons/newflighticon.png"
             alt="Flights & Hotels"
             className="w-8 h-8 mr-2"
-            loading="lazy"
+            loading="eager"
           />
           Flights & Hotels
         </button>
@@ -63,7 +63,7 @@ const BookingWidget = () => {
             src="/icons/newcarrentalicon.png"
             alt="Car Rental"
             className="w-8 h-8 mr-2"
-            loading="lazy"
+            loading="eager"
           />
           Car Rental
         </button>
@@ -79,7 +79,7 @@ const BookingWidget = () => {
             src="/icons/tripsicon.png"
             alt="Trips"
             className="w-8 h-8 mr-2"
-            loading="lazy"
+            loading="eager"
           />
           Trips
         </button>
@@ -95,7 +95,7 @@ const BookingWidget = () => {
             src="/icons/pickupsicon.png"
             alt="Pickups"
             className="w-8 h-8 mr-2"
-            loading="lazy"
+            loading="eager"
           />
           Pickups
         </button>
@@ -111,7 +111,7 @@ const BookingWidget = () => {
             src="/icons/esimicon.png"
             alt="eSIM"
             className="w-8 h-8 mr-2"
-            loading="lazy"
+            loading="eager"
           />
           eSIM
         </button>

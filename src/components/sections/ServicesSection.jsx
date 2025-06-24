@@ -80,7 +80,7 @@ const ServicesSection = ({ animate = true }) => {
                 src={service.iconSrc}
                 alt={service.title}
                 className="w-8 h-8"
-                loading="lazy"
+                loading="eager"
               />
             ) : (
               service.icon

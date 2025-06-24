@@ -11,7 +11,7 @@ const HotelCard = ({ hotel, animation = '' }) => {
         src={hotel.image}
         alt={hotel.title}
         className="h-48 w-full object-cover"
-        loading="lazy"
+        loading="eager"
       />
       <div className="p-6">
         <h3 className="text-xl font-bold mb-2">{hotel.title}</h3>
