@@ -43,12 +43,7 @@ const BookingWidget = () => {
           onClick={() => switchWidget('hotel-flight')}
         >
           {/* Updated icon size from w-6 h-6 to w-8 h-8 */}
-          <img
-            src="/icons/newflighticon.png"
-            alt="Flights & Hotels"
-            className="w-8 h-8 mr-2"
-            loading="lazy"
-          />
+          <img src="/icons/newflighticon.png" alt="Flights & Hotels" className="w-8 h-8 mr-2" />
           Flights & Hotels
         </button>
         <button
@@ -59,12 +54,7 @@ const BookingWidget = () => {
           }`}
           onClick={() => switchWidget('car-rental')}
         >
-          <img
-            src="/icons/newcarrentalicon.png"
-            alt="Car Rental"
-            className="w-8 h-8 mr-2"
-            loading="lazy"
-          />
+          <img src="/icons/newcarrentalicon.png" alt="Car Rental" className="w-8 h-8 mr-2" />
           Car Rental
         </button>
         <button
@@ -75,12 +65,7 @@ const BookingWidget = () => {
           }`}
           onClick={() => switchWidget('trips')}
         >
-          <img
-            src="/icons/tripsicon.png"
-            alt="Trips"
-            className="w-8 h-8 mr-2"
-            loading="lazy"
-          />
+          <img src="/icons/tripsicon.png" alt="Trips" className="w-8 h-8 mr-2" />
           Trips
         </button>
         <button
@@ -91,12 +76,7 @@ const BookingWidget = () => {
           }`}
           onClick={() => switchWidget('pickups')}
         >
-          <img
-            src="/icons/pickupsicon.png"
-            alt="Pickups"
-            className="w-8 h-8 mr-2"
-            loading="lazy"
-          />
+          <img src="/icons/pickupsicon.png" alt="Pickups" className="w-8 h-8 mr-2" />
           Pickups
         </button>
         <button
@@ -107,12 +87,7 @@ const BookingWidget = () => {
           }`}
           onClick={() => switchWidget('esim')}
         >
-          <img
-            src="/icons/esimicon.png"
-            alt="eSIM"
-            className="w-8 h-8 mr-2"
-            loading="lazy"
-          />
+          <img src="/icons/esimicon.png" alt="eSIM" className="w-8 h-8 mr-2" />
           eSIM
         </button>
       </div>

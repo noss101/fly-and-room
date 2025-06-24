@@ -33,12 +33,7 @@ const MoroccoSection = () => {
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-center">
             Places for Tourists
             <span className="inline-flex items-center">
-              <img
-                src="/icons/moroccoflag.png"
-                alt="Morocco flag"
-                className="w-6 h-6 ml-2 inline-block"
-                loading="lazy"
-              />
+              <img src="/icons/moroccoflag.png" alt="Morocco flag" className="w-6 h-6 ml-2 inline-block" />
             </span>
           </h2>
           <p className="text-xl max-w-3xl mx-auto text-gray-700">
@@ -55,7 +50,6 @@ const MoroccoSection = () => {
                   src={exp.image ? exp.image : `/localexp/${exp.slug}.svg`}
                   alt={exp.title}
                   className="h-32 w-full object-cover"
-                  loading="lazy"
                 />
                 <div className="p-4">
                   <h3 className="text-lg font-bold mb-2">{exp.title}</h3>
