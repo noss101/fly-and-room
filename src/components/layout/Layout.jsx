@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import CookieBanner from '../CookieBanner';
 
 const Layout = ({ children }) => {
   return (
@@ -17,6 +18,7 @@ const Layout = ({ children }) => {
         </div>
       </main>
       <Footer />
+      <CookieBanner />
     </div>
   );
 };
