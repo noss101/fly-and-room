@@ -1,12 +1,12 @@
 import React, { useEffect, useRef } from 'react';
-import { useWidget } from '../../context/WidgetContext';
+
+// Preload the script on mount so the widget is ready when shown
 
 const TripsWidget = () => {
-  const { activeWidget } = useWidget();
   const loaded = useRef(false);
 
   useEffect(() => {
-    if (activeWidget !== 'trips' || loaded.current) return;
+    if (loaded.current) return;
 
     const container = document.getElementById('trips-widget-container');
     if (!container) return;
@@ -19,7 +19,7 @@ const TripsWidget = () => {
 
     container.appendChild(script);
     loaded.current = true;
-  }, [activeWidget]);
+  }, []);
 
   return <div id="trips-widget-container" className="w-full shadow-lg"></div>;
 };

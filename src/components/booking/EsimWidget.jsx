@@ -1,12 +1,12 @@
 import React, { useEffect, useRef } from 'react';
-import { useWidget } from '../../context/WidgetContext';
+
+// Preload the eSIM script so the component renders immediately when selected
 
 const EsimWidget = () => {
-  const { activeWidget } = useWidget();
   const loaded = useRef(false);
 
   useEffect(() => {
-    if (activeWidget !== 'esim' || loaded.current) return;
+    if (loaded.current) return;
 
     const script = document.createElement('script');
     script.src =
@@ -19,7 +19,7 @@ const EsimWidget = () => {
       container.appendChild(script);
       loaded.current = true;
     }
-  }, [activeWidget]);
+  }, []);
 
   return <div id="esim-widget-container" className="w-full shadow-lg"></div>;
 };
