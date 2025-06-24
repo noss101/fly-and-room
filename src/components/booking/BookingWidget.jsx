@@ -17,7 +17,7 @@ const BookingWidget = () => {
       switchWidget(service);
     }
     // Only run this effect when the query parameter changes
-  }, [searchParams, activeWidget, switchWidget]);
+  }, [searchParams]);
 
   return (
     <div
