@@ -1,12 +1,13 @@
 import React, { useEffect, useRef } from 'react';
-import { useWidget } from '../../context/WidgetContext';
+
+// Preload the widget script once the component mounts to avoid delays when
+// switching between widgets.
 
 const CarRentalWidget = () => {
-  const { activeWidget } = useWidget();
   const loaded = useRef(false);
 
   useEffect(() => {
-    if (activeWidget !== 'car-rental' || loaded.current) return;
+    if (loaded.current) return;
 
     const script = document.createElement('script');
     script.src =
@@ -19,7 +20,7 @@ const CarRentalWidget = () => {
       container.appendChild(script);
       loaded.current = true;
     }
-  }, [activeWidget]);
+  }, []);
 
   return <div id="car-rental-widget-container" className="w-full shadow-lg"></div>;
 };

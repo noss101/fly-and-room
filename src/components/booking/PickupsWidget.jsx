@@ -1,12 +1,12 @@
 import React, { useEffect, useRef } from 'react';
-import { useWidget } from '../../context/WidgetContext';
+
+// Preload the script at mount time so the widget shows instantly on switch
 
 const PickupsWidget = () => {
-  const { activeWidget } = useWidget();
   const loaded = useRef(false);
 
   useEffect(() => {
-    if (activeWidget !== 'pickups' || loaded.current) return;
+    if (loaded.current) return;
 
     const script = document.createElement('script');
     script.src =
@@ -19,7 +19,7 @@ const PickupsWidget = () => {
       container.appendChild(script);
       loaded.current = true;
     }
-  }, [activeWidget]);
+  }, []);
 
   return <div id="pickups-widget-container" className="w-full shadow-lg"></div>;
 };
