@@ -29,6 +29,8 @@ const LocalExpPage = () => {
               alt={exp.title}
               className="h-48 w-full object-cover"
               loading="eager"
+              decoding="async"
+              fetchpriority="high"
             />
             <div className="p-6">
               <h3 className="text-xl font-bold mb-2">{exp.title}</h3>

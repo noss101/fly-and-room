@@ -38,6 +38,8 @@ const MoroccoSection = () => {
                 alt="Morocco flag"
                 className="w-6 h-6 ml-2 inline-block"
                 loading="eager"
+                decoding="async"
+                fetchpriority="high"
               />
             </span>
           </h2>
@@ -56,6 +58,8 @@ const MoroccoSection = () => {
                   alt={exp.title}
                   className="h-32 w-full object-cover"
                   loading="eager"
+                  decoding="async"
+                  fetchpriority="high"
                 />
                 <div className="p-4">
                   <h3 className="text-lg font-bold mb-2">{exp.title}</h3>
