@@ -34,7 +34,7 @@ const HotelDetailPage = () => {
                   src={src}
                   alt={`${hotel.title} ${idx + 1}`}
                   className="w-full h-40 object-cover cursor-pointer"
-                  loading="lazy"
+                  loading="eager"
                 />
               </button>
             ))}
@@ -48,7 +48,7 @@ const HotelDetailPage = () => {
                 src={selectedImage}
                 alt="Selected"
                 className="max-h-full max-w-full"
-                loading="lazy"
+                loading="eager"
               />
             </div>
           )}

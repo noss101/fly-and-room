@@ -37,7 +37,7 @@ const MoroccoSection = () => {
                 src="/icons/moroccoflag.png"
                 alt="Morocco flag"
                 className="w-6 h-6 ml-2 inline-block"
-                loading="lazy"
+                loading="eager"
               />
             </span>
           </h2>
@@ -55,7 +55,7 @@ const MoroccoSection = () => {
                   src={exp.image ? exp.image : `/localexp/${exp.slug}.svg`}
                   alt={exp.title}
                   className="h-32 w-full object-cover"
-                  loading="lazy"
+                  loading="eager"
                 />
                 <div className="p-4">
                   <h3 className="text-lg font-bold mb-2">{exp.title}</h3>
