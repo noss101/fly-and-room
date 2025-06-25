@@ -1,4 +1,5 @@
-<svg width="160" height="160" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+<!-- Enlarged favicon for better visibility on browser tabs -->
+<svg width="512" height="512" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
   <!-- Compass rose -->
   <polygon points="30,30 30,50 40,40" fill="#FFC300"/>
   <polygon points="30,50 30,30 20,40" fill="#276EF1"/>
