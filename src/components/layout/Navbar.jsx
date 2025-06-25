@@ -23,8 +23,8 @@ const Navbar = () => {
           }}
         >
           <img
-            src="/logos/newlogoo.png"
-            alt="Fly and Room Logo"
+            src="/logos/triploro-logo.svg"
+            alt="Triploro.com Logo"
             className="h-12 md:h-16 transform scale-125 origin-left"
             loading="eager"
           />

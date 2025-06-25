@@ -12,7 +12,7 @@ const PrivacyPolicyPage = () => {
           <div className="prose max-w-none">
             <h2>Introduction</h2>
             <p>
-              Fly and Room ("we", "us", or "our") operates the flyandroom.com website (the "Service").
+              Triploro.com ("we", "us", or "our") operates the Triploro.com website (the "Service").
               This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service.
             </p>
             
@@ -29,7 +29,7 @@ const PrivacyPolicyPage = () => {
             
             <h2>Use of Data</h2>
             <p>
-              Fly and Room uses the collected data for various purposes:
+              Triploro.com uses the collected data for various purposes:
             </p>
             <ul>
               <li>To provide and maintain our Service</li>
@@ -57,8 +57,8 @@ const PrivacyPolicyPage = () => {
               If you have any questions about this Privacy Policy, please contact us:
             </p>
             <ul>
-              <li>By email: privacy@flyandroom.com</li>
-              <li>By visiting this page on our website: flyandroom.com/contact</li>
+              <li>By email: privacy@triploro.com</li>
+              <li>By visiting this page on our website: Triploro.com/contact</li>
             </ul>
           </div>
         </div>
