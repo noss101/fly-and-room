@@ -21,6 +21,7 @@ const Navbar = () => {
             setMobileMenuOpen(false);
             window.scrollTo({ top: 0, behavior: 'smooth' });
           }}
+          className="flex items-center space-x-2"
         >
           <img
             src="/logos/triploro-logo.svg"
@@ -28,6 +29,7 @@ const Navbar = () => {
             className="h-12 md:h-16 transform scale-125 origin-left"
             loading="eager"
           />
+          <span className="text-lg md:text-xl font-semibold text-gray-800">Triploro.com</span>
         </Link>
         
         {/* Desktop Navigation */}
