@@ -23,7 +23,6 @@ const Footer = () => {
     className="h-16 sm:h-20 md:h-24 w-auto"
     loading="eager"
   />
-  <span className="text-xl md:text-2xl font-semibold text-gray-800">Triploro</span>
 </Link>
               <p className="mt-2 text-gray-600 max-w-md text-sm md:text-base">
               Your trusted partner for flights, hotels, and car rentals in Morocco and beyond.
