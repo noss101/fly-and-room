@@ -18,8 +18,8 @@ const Footer = () => {
           <div className="mb-6 md:mb-0">
           <Link to="/" className="flex items-center hover:no-underline">
   <img
-    src="/logos/newlogoo.png"
-    alt="Fly and Room Logo"
+    src="/logos/triploro-logo.svg"
+    alt="Triploro.com Logo"
     className="h-16 sm:h-20 md:h-24 w-auto"
     loading="eager"
   />
@@ -57,7 +57,7 @@ const Footer = () => {
             <div>
               <h3 className="text-base md:text-lg font-semibold mb-3">Contact</h3>
               <ul className="space-y-2 text-gray-600 text-sm md:text-base">
-                <li>Email: info@flyandroom.com</li>
+                <li>Email: info@triploro.com</li>
                 <li>Phone: +212 600-123456</li>
                 <li>Address: Marrakech, Morocco</li>
               </ul>
@@ -66,7 +66,7 @@ const Footer = () => {
         </div>
         
         <div className="mt-8 pt-6 border-t border-gray-200 text-center text-gray-600">
-          <p>&copy; {new Date().getFullYear()} Fly and Room. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Triploro.com. All rights reserved.</p>
         </div>
       </div>
     </footer>
