@@ -16,13 +16,14 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
-          <Link to="/" className="flex items-center hover:no-underline">
+          <Link to="/" className="flex items-center hover:no-underline space-x-2">
   <img
     src="/logos/triploro-logo.svg"
     alt="Triploro.com Logo"
     className="h-16 sm:h-20 md:h-24 w-auto"
     loading="eager"
   />
+  <span className="text-xl md:text-2xl font-semibold text-gray-800">Triploro.com</span>
 </Link>
               <p className="mt-2 text-gray-600 max-w-md text-sm md:text-base">
               Your trusted partner for flights, hotels, and car rentals in Morocco and beyond.
