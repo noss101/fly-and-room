@@ -25,11 +25,11 @@ const Navbar = () => {
         >
           <img
             src="/logos/triploro-logo.svg"
-            alt="Triploro.com Logo"
+            alt="Triploro Logo"
             className="h-12 md:h-16 transform scale-125 origin-left"
             loading="eager"
           />
-          <span className="text-lg md:text-xl font-semibold text-gray-800">Triploro.com</span>
+          <span className="text-lg md:text-xl font-semibold text-gray-800">Triploro</span>
         </Link>
         
         {/* Desktop Navigation */}

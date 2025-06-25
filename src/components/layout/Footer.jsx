@@ -19,11 +19,11 @@ const Footer = () => {
           <Link to="/" className="flex items-center hover:no-underline space-x-2">
   <img
     src="/logos/triploro-logo.svg"
-    alt="Triploro.com Logo"
+    alt="Triploro Logo"
     className="h-16 sm:h-20 md:h-24 w-auto"
     loading="eager"
   />
-  <span className="text-xl md:text-2xl font-semibold text-gray-800">Triploro.com</span>
+  <span className="text-xl md:text-2xl font-semibold text-gray-800">Triploro</span>
 </Link>
               <p className="mt-2 text-gray-600 max-w-md text-sm md:text-base">
               Your trusted partner for flights, hotels, and car rentals in Morocco and beyond.
@@ -67,7 +67,7 @@ const Footer = () => {
         </div>
         
         <div className="mt-8 pt-6 border-t border-gray-200 text-center text-gray-600">
-          <p>&copy; {new Date().getFullYear()} Triploro.com. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Triploro. All rights reserved.</p>
         </div>
       </div>
     </footer>
