@@ -1,6 +1,7 @@
 import React from 'react';
 import MarrakechTourDetails from '../components/MarrakechTourDetails.jsx';
 import SaharaDesertDetails from '../components/SaharaDesertDetails.jsx';
+import EssaouiraTourDetails from '../components/EssaouiraTourDetails.jsx';
 
 export const localExperiences = [
   {
@@ -29,7 +30,7 @@ export const localExperiences = [
     slug: 'essaouira-coastal-charm',
     title: 'Essaouira Coastal Charm',
     description: 'Relax in this charming coastal town with its blue fishing boats and fresh seafood.',
-    details: 'Stroll through the fortified medina, watch the vibrant fishing port in action, and sample fresh Atlantic seafood.',
+    details: <EssaouiraTourDetails />,
     image: '/images/EssaouiraCoastalCharm.jpg'
   },
   {
