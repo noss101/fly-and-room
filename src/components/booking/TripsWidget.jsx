@@ -13,7 +13,7 @@ const TripsWidget = () => {
 
     const script = document.createElement('script');
     script.src =
-      'https://tpwidg.com/content?currency=USD&trs=425059&shmarker=636307.636307&product=1106931%2C1106930%2C1114535%2C1114028&language=en&layout=horizontal&powered_by=true&campaign_id=89&promo_id=3948';
+      'https://tpwidg.com/content?currency=USD&trs=429618&shmarker=636307.636307&product=1114537%2C1114028%2C1114534%2C1106931&language=en&layout=vertical&powered_by=true&campaign_id=89&promo_id=3948';
     script.async = true;
     script.charset = 'utf-8';
 
