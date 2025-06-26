@@ -2,6 +2,7 @@ import React from 'react';
 import MarrakechTourDetails from '../components/MarrakechTourDetails.jsx';
 import SaharaDesertDetails from '../components/SaharaDesertDetails.jsx';
 import EssaouiraTourDetails from '../components/EssaouiraTourDetails.jsx';
+import ChefchaouenBlueCityDetails from '../components/ChefchaouenBlueCityDetails.jsx';
 
 export const localExperiences = [
   {
@@ -44,7 +45,7 @@ export const localExperiences = [
     slug: 'chefchaouen-blue-city',
     title: 'Chefchaouen Blue City',
     description: "Discover the magical blue-washed streets of Morocco's most photogenic city.",
-    details: 'Wander through blue-hued alleys, enjoy panoramic mountain views, and experience this unique destination.',
+    details: <ChefchaouenBlueCityDetails />,
     image: '/images/ChefchaouenBlueCity.jpg'
   }
 ];
