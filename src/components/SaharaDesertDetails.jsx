@@ -26,13 +26,13 @@ const SaharaDesertDetails = () => {
           </div>
           <div className="mt-2">
             <div
-              className="bg-white rounded-xl overflow-hidden shadow-lg w-40 cursor-pointer"
+              className="bg-white rounded-xl overflow-hidden shadow-lg w-60 cursor-pointer"
               onClick={() => setOpenImage('/images/Camel Trekking.jpg')}
             >
               <img
                 src="/images/Camel Trekking.jpg"
                 alt="Camel Trekking"
-                className="h-28 w-full object-cover"
+                className="h-40 w-full object-cover"
                 loading="lazy"
               />
             </div>
@@ -52,13 +52,13 @@ const SaharaDesertDetails = () => {
           </div>
           <div className="mt-2">
             <div
-              className="bg-white rounded-xl overflow-hidden shadow-lg w-40 cursor-pointer"
+              className="bg-white rounded-xl overflow-hidden shadow-lg w-60 cursor-pointer"
               onClick={() => setOpenImage('/images/Overnight Camps desert.png')}
             >
               <img
                 src="/images/Overnight Camps desert.png"
                 alt="Overnight Camps"
-                className="h-28 w-full object-cover"
+                className="h-40 w-full object-cover"
                 loading="lazy"
               />
             </div>
@@ -78,13 +78,13 @@ const SaharaDesertDetails = () => {
           </div>
           <div className="mt-2">
             <div
-              className="bg-white rounded-xl overflow-hidden shadow-lg w-40 cursor-pointer"
+              className="bg-white rounded-xl overflow-hidden shadow-lg w-60 cursor-pointer"
               onClick={() => setOpenImage('/images/4.4.png')}
             >
               <img
                 src="/images/4.4.png"
                 alt="4x4 Desert Tours"
-                className="h-28 w-full object-cover"
+                className="h-40 w-full object-cover"
                 loading="lazy"
               />
             </div>
@@ -104,13 +104,13 @@ const SaharaDesertDetails = () => {
           </div>
           <div className="mt-2">
             <div
-              className="bg-white rounded-xl overflow-hidden shadow-lg w-40 cursor-pointer"
+              className="bg-white rounded-xl overflow-hidden shadow-lg w-60 cursor-pointer"
               onClick={() => setOpenImage('/images/sandboarding (1).jpg')}
             >
               <img
                 src="/images/sandboarding (1).jpg"
                 alt="Sandboarding"
-                className="h-28 w-full object-cover"
+                className="h-40 w-full object-cover"
                 loading="lazy"
               />
             </div>
@@ -130,13 +130,13 @@ const SaharaDesertDetails = () => {
           </div>
           <div className="mt-2">
             <div
-              className="bg-white rounded-xl overflow-hidden shadow-lg w-40 cursor-pointer"
+              className="bg-white rounded-xl overflow-hidden shadow-lg w-60 cursor-pointer"
               onClick={() => setOpenImage('/images/Sahara-Desert-night.jpg')}
             >
               <img
                 src="/images/Sahara-Desert-night.jpg"
                 alt="Sunset Views"
-                className="h-28 w-full object-cover"
+                className="h-40 w-full object-cover"
                 loading="lazy"
               />
             </div>
