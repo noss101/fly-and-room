@@ -57,13 +57,13 @@ const MarrakechTourDetails = () => {
             </span>
             <div className="mt-2">
               <div
-                className="bg-white rounded-xl overflow-hidden shadow-lg w-40 cursor-pointer"
+                className="bg-white rounded-xl overflow-hidden shadow-lg w-60 cursor-pointer"
                 onClick={() => setOpenImage(img.src)}
               >
                 <img
                   src={img.src}
                   alt={img.alt}
-                  className="h-28 w-full object-cover"
+                  className="h-40 w-full object-cover"
                   loading="lazy"
                 />
               </div>
