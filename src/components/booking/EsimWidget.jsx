@@ -10,7 +10,7 @@ const EsimWidget = () => {
 
     const script = document.createElement('script');
     script.src =
-      'https://tpwidg.com/content?trs=425059&shmarker=636307.636307&locale=en&powered_by=true&color_button=%23ff5733&color_focused=%23f2685f&secondary=%23FFFFFF&dark=%2311100f&light=%23FFFFFF&special=%23000000ff&border_radius=5&plain=false&no_labels=true&promo_id=8588&campaign_id=541';
+      'https://tpwidg.com/content?trs=429618&shmarker=636307.636307&locale=en&powered_by=true&color_button=%232426DAff&color_focused=%23f2685f&secondary=%23FFFFFF&dark=%2311100f&light=%23FFFFFF&special=%23C4C4C4&border_radius=5&plain=false&no_labels=true&promo_id=8588&campaign_id=541';
     script.async = true;
     script.charset = 'utf-8';
 

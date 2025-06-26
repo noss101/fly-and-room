@@ -12,7 +12,7 @@ const HotelFlightWidget = () => {
 
     const script = document.createElement('script');
     script.src =
-      "https://tpwidg.com/content?trs=425059&shmarker=636307.636307&locale=en&curr=USD&powered_by=true&border_radius=0&plain=false&color_button=%230c58bb&color_button_text=%23ffffff&color_border=%230c58bb&promo_id=4132&campaign_id=121";
+      "https://tpwidg.com/content?trs=429618&shmarker=636307.636307&locale=en&curr=USD&powered_by=true&border_radius=0&plain=false&color_button=%23203CCEff&color_button_text=%23ffffff&color_border=%23636361ff&promo_id=4132&campaign_id=121";
     script.async = true;
     script.charset = 'utf-8';
 
