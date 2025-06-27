@@ -12,13 +12,13 @@ const PrivacyPolicyPage = () => {
           <div className="prose max-w-none">
             <h2>Introduction</h2>
             <p>
-              Triploro.com ("we", "us", or "our") operates the Triploro.com website (the "Service").
-              This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service.
+              Triploro.com ("we", "us", or "our") operates the Triploro travel platform and related services, including flight, hotel, car rental, trip, pickup,
+              and eSIM bookings (the "Service"). This page explains how we collect, use, and disclose personal data when you use our Service.
             </p>
             
             <h2>Information Collection and Use</h2>
             <p>
-              We collect several different types of information for various purposes to provide and improve our Service to you.
+              We collect different types of information when you browse Triploro or make a booking so that we can provide and improve our travel services.
               Types of Data Collected:
             </p>
             <ul>
@@ -33,6 +33,7 @@ const PrivacyPolicyPage = () => {
             </p>
             <ul>
               <li>To provide and maintain our Service</li>
+              <li>To process your travel bookings</li>
               <li>To notify you about changes to our Service</li>
               <li>To allow you to participate in interactive features</li>
               <li>To provide customer support</li>
@@ -58,6 +59,7 @@ const PrivacyPolicyPage = () => {
             </p>
               <ul>
                 <li>By email: Contact@triploro.com</li>
+                <li>Through our website's <a href="/contact">contact page</a></li>
               </ul>
             </div>
           </div>
