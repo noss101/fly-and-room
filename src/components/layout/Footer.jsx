@@ -55,14 +55,12 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <h3 className="text-base md:text-lg font-semibold mb-3">Contact</h3>
-              <ul className="space-y-2 text-gray-600 text-sm md:text-base">
-                <li>Email: info@triploro.com</li>
-                <li>Phone: +212 600-123456</li>
-                <li>Address: Marrakech, Morocco</li>
-              </ul>
+                <h3 className="text-base md:text-lg font-semibold mb-3">Contact</h3>
+                <ul className="space-y-2 text-gray-600 text-sm md:text-base">
+                  <li>Email: Contact@triploro.com</li>
+                </ul>
+              </div>
             </div>
-          </div>
         </div>
         
         <div className="mt-8 pt-6 border-t border-gray-200 text-center text-gray-600">

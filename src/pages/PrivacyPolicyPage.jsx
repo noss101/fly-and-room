@@ -56,13 +56,12 @@ const PrivacyPolicyPage = () => {
             <p>
               If you have any questions about this Privacy Policy, please contact us:
             </p>
-            <ul>
-              <li>By email: privacy@triploro.com</li>
-              <li>By visiting this page on our website: Triploro.com/contact</li>
-            </ul>
+              <ul>
+                <li>By email: Contact@triploro.com</li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
     </div>
   );
 };
