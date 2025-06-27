@@ -15,15 +15,26 @@ const ContactPage = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const userId = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+    if (!serviceId || !templateId || !userId) {
+      console.error('Missing EmailJS configuration');
+      setStatus('config-error');
+      return;
+    }
+
     setStatus('loading');
     try {
       const response = await fetch('https://api.emailjs.com/api/v1.0/email/send', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          service_id: import.meta.env.VITE_EMAILJS_SERVICE_ID,
-          template_id: import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-          user_id: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+          service_id: serviceId,
+          template_id: templateId,
+          user_id: userId,
           template_params: {
             from_name: formData.name,
             reply_to: formData.email,
@@ -114,6 +125,11 @@ const ContactPage = () => {
           </form>
           {status === 'success' && (
             <p className="mt-4 text-green-600">Message sent successfully.</p>
+          )}
+          {status === 'config-error' && (
+            <p className="mt-4 text-red-600">
+              Email service is not configured. Please try again later.
+            </p>
           )}
           {status === 'error' && (
             <p className="mt-4 text-red-600">Something went wrong. Please try again later.</p>
