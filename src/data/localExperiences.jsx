@@ -3,6 +3,7 @@ import MarrakechTourDetails from '../components/MarrakechTourDetails.jsx';
 import SaharaDesertDetails from '../components/SaharaDesertDetails.jsx';
 import EssaouiraTourDetails from '../components/EssaouiraTourDetails.jsx';
 import ChefchaouenBlueCityDetails from '../components/ChefchaouenBlueCityDetails.jsx';
+import FesCulturalDetails from '../components/FesCulturalDetails.jsx';
 
 export const localExperiences = [
   {
@@ -38,7 +39,7 @@ export const localExperiences = [
     slug: 'fes-cultural-immersion',
     title: 'Fes Cultural Immersion',
     description: "Explore the world's oldest medieval city and its vibrant artisan quarters.",
-    details: 'Lose yourself in narrow alleys of the Fes medina and meet artisans preserving centuries-old crafts.',
+    details: <FesCulturalDetails />,
     image: '/images/FesCulturalImmersion.jpg'
   },
   {
