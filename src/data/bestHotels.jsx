@@ -75,59 +75,101 @@ export const bestHotels = [
           25-hectare protected national park with direct beach access, this
           resort is ideal for couples, families, and solo travelers.
         </p>
-        <p>
-          <strong>Top Reasons to Stay</strong>
-        </p>
-        <ul className="list-disc pl-5">
-          <li>Only 15 minutes from Tangier Airport</li>
-          <li>2 hours from Casablanca via high-speed train</li>
-          <li>Quiet, peaceful location outside city noise</li>
-          <li>Direct access to a 5-kilometer beach</li>
-          <li>Surrounded by lush protected landscapes</li>
+        <h2 className="text-2xl font-semibold mt-6 mb-2">
+          <IconStar /> Top Reasons to Stay
+        </h2>
+        <ul className="list-disc list-inside mb-4">
+          <li>
+            <IconCheck /> Only 15 minutes from Tangier Airport
+          </li>
+          <li>
+            <IconCheck /> 2 hours from Casablanca via high-speed train
+          </li>
+          <li>
+            <IconCheck /> Quiet, peaceful location outside city noise
+          </li>
+          <li>
+            <IconCheck /> Direct access to a 5-kilometer beach
+          </li>
+          <li>
+            <IconCheck /> Surrounded by lush protected landscapes
+          </li>
         </ul>
-        <p>
-          <strong>Hotel Highlights</strong>
-        </p>
-        <ul className="list-disc pl-5">
-          <li>304 modern rooms, including 18 luxury suites</li>
-          <li>50 fully equipped apartments for families</li>
-          <li>3 swimming pools (heated, kids, oceanfront)</li>
-          <li>850m² Eforea Spa with jacuzzi, sauna &amp; fitness center</li>
-          <li>5 on-site restaurants offering international &amp; Moroccan cuisine</li>
+        <h2 className="text-2xl font-semibold mt-6 mb-2">
+          <IconBed /> Hotel Highlights
+        </h2>
+        <ul className="list-disc list-inside mb-4">
+          <li>
+            <IconCheck /> 304 modern rooms, including 18 luxury suites
+          </li>
+          <li>
+            <IconCheck /> 50 fully equipped apartments for families
+          </li>
+          <li>
+            <IconCheck /> 3 swimming pools (heated, kids, oceanfront)
+          </li>
+          <li>
+            <IconCheck /> 850m² Eforea Spa with jacuzzi, sauna &amp; fitness center
+          </li>
+          <li>
+            <IconCheck /> 5 on-site restaurants offering international &amp; Moroccan cuisine
+          </li>
         </ul>
-        <p>
-          <strong>Dining Options</strong>
-        </p>
-        <ul className="list-disc pl-5">
-          <li>Argan: All-day international buffet</li>
-          <li>Tucano: Poolside tapas &amp; DJ entertainment</li>
-          <li>L’Olivier: Mediterranean fine dining experience</li>
-          <li>Rose Bar: Lobby cocktails &amp; light bites</li>
-          <li>Cig’Art Lounge: Premium cigars and spirits</li>
+        <h2 className="text-2xl font-semibold mt-6 mb-2">
+          <IconCar /> Dining Options
+        </h2>
+        <ul className="list-disc list-inside mb-4">
+          <li>
+            <IconCheck /> Argan: All-day international buffet
+          </li>
+          <li>
+            <IconCheck /> Tucano: Poolside tapas &amp; DJ entertainment
+          </li>
+          <li>
+            <IconCheck /> L’Olivier: Mediterranean fine dining experience
+          </li>
+          <li>
+            <IconCheck /> Rose Bar: Lobby cocktails &amp; light bites
+          </li>
+          <li>
+            <IconCheck /> Cig’Art Lounge: Premium cigars and spirits
+          </li>
         </ul>
-        <p>
-          <strong>Wellness &amp; Relaxation</strong>
-        </p>
+        <h2 className="text-2xl font-semibold mt-6 mb-2">
+          <IconStar /> Wellness &amp; Relaxation
+        </h2>
         <p>
           The resort’s Eforea Spa is designed for total relaxation with modern
           therapy rooms, hammams, and 24-hour fitness access. A beauty salon and
           wellness treatments offer guests a complete pampering experience.
         </p>
-        <p>
-          <strong>Nearby Attractions</strong>
-        </p>
-        <ul className="list-disc pl-5">
-          <li>Historic Tangier Medina</li>
-          <li>Cap Spartel &amp; Hercules Caves</li>
-          <li>Asilah coastal village</li>
-          <li>Local markets and Moroccan cafés</li>
+        <h2 className="text-2xl font-semibold mt-6 mb-2">
+          <IconCar /> Nearby Attractions
+        </h2>
+        <ul className="list-disc list-inside mb-4">
+          <li>
+            <IconCheck /> Historic Tangier Medina
+          </li>
+          <li>
+            <IconCheck /> Cap Spartel &amp; Hercules Caves
+          </li>
+          <li>
+            <IconCheck /> Asilah coastal village
+          </li>
+          <li>
+            <IconCheck /> Local markets and Moroccan cafés
+          </li>
         </ul>
-        <p>
-          <strong>Upcoming Features</strong>
-        </p>
-        <ul className="list-disc pl-5">
-          <li>18-hole golf course under development</li>
-          <li>9-hole pitch &amp; putt golf academy with lighting</li>
+        <h2 className="text-2xl font-semibold mt-6 mb-2">
+          <IconStar /> Upcoming Features
+        </h2>
+        <ul className="list-disc list-inside mb-4">
+          <li>
+            <IconCheck /> 18-hole golf course under development
+          </li>
+          <li>
+            <IconCheck /> 9-hole pitch &amp; putt golf academy with lighting
+          </li>
         </ul>
         <p>
           <strong>Final Thoughts</strong>
@@ -187,49 +229,83 @@ export const bestHotels = [
           <p>
             Welcome to <strong>AG Hôtel &amp; Spa Marrakech</strong>, where luxury and relaxation come together to create a truly memorable stay. More than just a place to sleep, AG Hôtel offers an experience designed for both leisure and business travelers, with personalized service at every turn.
           </p>
-          <p>
-            <strong>Why Choose AG Hôtel &amp; Spa Marrakech?</strong>
-          </p>
-          <ul className="list-disc pl-5">
-            <li>Located at the gateway to Marrakech’s historic medina</li>
-            <li>Elegant blend of contemporary design and Moroccan charm</li>
-            <li>Warm, attentive service focused on guest satisfaction</li>
-            <li>Peaceful atmosphere with garden and mountain views</li>
-          </ul>
-          <p>
-            <strong>Rooms &amp; Suites: Your Ideal Refuge</strong>
-          </p>
-          <ul className="list-disc pl-5">
-            <li>Spacious, light-filled rooms and suites</li>
-            <li>Contemporary décor with Moroccan touches</li>
-            <li>Modern technology and comforts</li>
-            <li>Beautiful views of lush gardens or distant mountains</li>
-          </ul>
-          <p>
-            <strong>Culinary Excellence</strong>
-          </p>
-          <p>
-            Enjoy a culinary journey where <strong>Moroccan tradition</strong> meets <strong>international creativity</strong>. Dishes are crafted with seasonal ingredients and served with elegance in the hotel’s fine dining spaces.
-          </p>
-          <p>
-            <strong>Spa &amp; Wellness: Relax, Recharge, Rejuvenate</strong>
-          </p>
-          <ul className="list-disc pl-5">
-            <li><strong>Spa &amp; sauna:</strong> Detox, improve circulation, and achieve deep relaxation</li>
-            <li><strong>Custom massages:</strong> Tailored treatments using natural essential oils</li>
-            <li><strong>Fitness center:</strong> State-of-the-art gym with personal trainers</li>
-            <li><strong>Group classes:</strong> Stay active and inspired during your stay</li>
-          </ul>
-          <p>
-            <strong>Nearby Highlights</strong>
-          </p>
-          <ul className="list-disc pl-5 mb-6">
-            <li>Marrakech Medina</li>
-            <li>Koutoubia Mosque</li>
-            <li>Majorelle Garden</li>
-            <li>Jemaa el-Fnaa square</li>
-            <li>Saadian Tombs</li>
-          </ul>
+        <h2 className="text-2xl font-semibold mt-6 mb-2">
+          <IconStar /> Why Choose AG Hôtel &amp; Spa Marrakech?
+        </h2>
+        <ul className="list-disc list-inside mb-4">
+          <li>
+            <IconCheck /> Located at the gateway to Marrakech’s historic medina
+          </li>
+          <li>
+            <IconCheck /> Elegant blend of contemporary design and Moroccan charm
+          </li>
+          <li>
+            <IconCheck /> Warm, attentive service focused on guest satisfaction
+          </li>
+          <li>
+            <IconCheck /> Peaceful atmosphere with garden and mountain views
+          </li>
+        </ul>
+        <h2 className="text-2xl font-semibold mt-6 mb-2">
+          <IconBed /> Rooms &amp; Suites: Your Ideal Refuge
+        </h2>
+        <ul className="list-disc list-inside mb-4">
+          <li>
+            <IconCheck /> Spacious, light-filled rooms and suites
+          </li>
+          <li>
+            <IconCheck /> Contemporary décor with Moroccan touches
+          </li>
+          <li>
+            <IconCheck /> Modern technology and comforts
+          </li>
+          <li>
+            <IconCheck /> Beautiful views of lush gardens or distant mountains
+          </li>
+        </ul>
+        <h2 className="text-2xl font-semibold mt-6 mb-2">
+          <IconCar /> Culinary Excellence
+        </h2>
+        <p>
+          Enjoy a culinary journey where <strong>Moroccan tradition</strong> meets <strong>international creativity</strong>. Dishes are crafted with seasonal ingredients and served with elegance in the hotel’s fine dining spaces.
+        </p>
+        <h2 className="text-2xl font-semibold mt-6 mb-2">
+          <IconStar /> Spa &amp; Wellness: Relax, Recharge, Rejuvenate
+        </h2>
+        <ul className="list-disc list-inside mb-4">
+          <li>
+            <IconCheck /> <strong>Spa &amp; sauna:</strong> Detox, improve circulation, and achieve deep relaxation
+          </li>
+          <li>
+            <IconCheck /> <strong>Custom massages:</strong> Tailored treatments using natural essential oils
+          </li>
+          <li>
+            <IconCheck /> <strong>Fitness center:</strong> State-of-the-art gym with personal trainers
+          </li>
+          <li>
+            <IconCheck /> <strong>Group classes:</strong> Stay active and inspired during your stay
+          </li>
+        </ul>
+        <h2 className="text-2xl font-semibold mt-6 mb-2">
+          <IconCar /> Nearby Highlights
+        </h2>
+        <ul className="list-disc list-inside mb-6">
+          <li>
+            <IconCheck /> Marrakech Medina
+          </li>
+          <li>
+            <IconCheck /> Koutoubia Mosque
+          </li>
+          <li>
+            <IconCheck /> Majorelle Garden
+          </li>
+          <li>
+            <IconCheck /> Jemaa el-Fnaa square
+          </li>
+          <li>
+            <IconCheck /> Saadian Tombs
+          </li>
+        </ul>
           <p>
             Whether you’re here to unwind, explore, or both — <strong>AG Hôtel &amp; Spa Marrakech</strong> promises to make your visit truly unforgettable.
           </p>
