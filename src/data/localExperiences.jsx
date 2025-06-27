@@ -4,6 +4,7 @@ import SaharaDesertDetails from '../components/SaharaDesertDetails.jsx';
 import EssaouiraTourDetails from '../components/EssaouiraTourDetails.jsx';
 import ChefchaouenBlueCityDetails from '../components/ChefchaouenBlueCityDetails.jsx';
 import FesCulturalDetails from '../components/FesCulturalDetails.jsx';
+import AkchourNatureEscapeDetails from '../components/AkchourNatureEscapeDetails.jsx';
 
 export const localExperiences = [
   {
@@ -23,10 +24,11 @@ export const localExperiences = [
   },
   {
     slug: 'atlas-mountain-trekking',
-    title: 'Atlas Mountain Trekking',
-    description: 'Hike through breathtaking landscapes and visit traditional Berber villages.',
-    details: 'Explore the rugged Atlas mountain range with local guides and discover the rich culture of Berber communities.',
-    image: '/images/AtlasMountainTrekking.jpg'
+    title: 'Akchour Nature Escape',
+    description:
+      'Nestled between mountains near Chefchaouen, Akchour offers lush trails and refreshing rivers for nature lovers.',
+    details: <AkchourNatureEscapeDetails />,
+    image: '/images/displaycardAkchour.jpg'
   },
   {
     slug: 'essaouira-coastal-charm',

@@ -149,9 +149,6 @@ const SaharaDesertDetails = () => {
         The Sahara Desert is more than just sand — it's a place of peace, beauty, and discovery. Whether you seek adventure or relaxation, the desert promises a unique and unforgettable experience.
       </p>
 
-      <a href="/local-experiences/sahara-desert-adventures" className="inline-block mt-2 bg-yellow-600 text-white px-4 py-2 rounded hover:bg-yellow-700 transition">
-        Learn More
-      </a>
 
       {openImage && (
         <div
