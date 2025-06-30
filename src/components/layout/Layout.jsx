@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import CookieBanner from '../CookieBanner';
+import { Analytics } from '@vercel/analytics/react';
 
 const Layout = ({ children }) => {
   return (
@@ -19,6 +20,7 @@ const Layout = ({ children }) => {
       </main>
       <Footer />
       <CookieBanner />
+      <Analytics />
     </div>
   );
 };
